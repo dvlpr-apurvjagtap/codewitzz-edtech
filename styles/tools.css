@@ -1,3 +1,55 @@
-body {
-    background: linear-gradient(135deg, #0f051d 0%, #290245 50%, #4b007d 100%);
+
+/* tools.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    background: linear-gradient(315deg, #111827 0%, #581C87 50%, #111827 100%); /* Background gradient */
+}  
+ /*Heading styles*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    margin-top: 45px;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: Inter;
+    background: linear-gradient(to right,#22D3EE,#F472B6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading span {
+    margin-top: 45px;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+#tools-para1 {
+    line-height: 28px;
+    font-size: 18.28px;
+    font-weight: 400;
+    font-family: Inter;
+    color: #D1D5DB;
+}
+
+/* Tabs Section */
+
