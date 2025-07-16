@@ -1,5 +1,5 @@
 
-/* tools.css */
+/* TOOLS CSS  */
 
 * {
     margin: 0;
@@ -12,7 +12,10 @@ body {
     height: 100%;
     background: linear-gradient(315deg, #111827 0%, #581C87 50%, #111827 100%); /* Background gradient */
 }  
- /*Heading styles*/
+
+
+
+/* HEADING STYLING  */
 
 .container{
     display: flex;
@@ -50,7 +53,6 @@ body {
     color: #D1D5DB;
 }
 
-/* Tabs Section */
 
 .tab-bar {
     display: flex;
@@ -84,6 +86,11 @@ body {
     font-size: 20px;
 }
 
+
+
+
+/* CODE PLAYGROUND SECTION  */
+
 .main-containt {
     display: flex;
     justify-content: center;
@@ -95,7 +102,7 @@ body {
     width: 1216px;
     height: 680px;
     border: 1px solid #FFFFFF33;
-    margin-top: 32px;
+    margin-top: 30px;
     border-radius: 24px;
     background: linear-gradient(315deg, #0f172a,#581c87,#0f172a);
     margin-bottom: 90px;
@@ -207,6 +214,11 @@ h2 span {
     color: #fff;
 }
 
+option {
+    background-color: #0a0434;
+    color: white;
+}
+
 #note-area {
     width: 563px;
     height: 376px;
@@ -246,7 +258,6 @@ h2 span {
     font-size: 16px;
     line-height: 24px;
 }
-
 
 .result {
     width: 563px;
@@ -310,7 +321,19 @@ h2 span {
     background-color: #634587;
     border-radius: 12px;
     padding: 12px;
+    transition: all 0.3s ease;
 }
+
+.test-case-item:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+
+/* CLOUD LAB SECTION  */
+
 
 .cloud-lab-environment{
     display: flex;
@@ -325,7 +348,7 @@ h2 span {
     padding: 17px 33px 33px;
     width: 1216px;
     height: 750px;
-    margin-top: 32px;
+    margin-top: 30px;
     border: 1px solid #FFFFFF33;
     border-radius: 24px;
     background: linear-gradient(315deg, #0f172a,#581c87,#0f172a);
@@ -336,7 +359,7 @@ h2 span {
     margin-top: 30px;
     font-size: 24px;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #configure-btn{
@@ -352,6 +375,7 @@ h2 span {
     height: 54px;
     font-size: 13.54px;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .console {
@@ -373,6 +397,7 @@ h2 span {
 }
 
 #welcome {
+    line-height: 20px;
     color: #4ADE80;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -397,11 +422,37 @@ h2 span {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+
+
+/* CURSOR BLINKING ANIMATION  */
+
+#cursor {
+    animation: blink-cursor 2s infinite alternate ease-in-out;
+}
+
+@keyframes blink-cursor {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
 .short-note {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 24px;
+    font-family: sans-serif;
 }
 
 .commands {
@@ -414,6 +465,11 @@ h2 span {
     line-height: 23px;
     background: #3e3082;
     backdrop-filter: blur(24px);
+    transition: all 0.3s ease;
+}
+
+.commands p{
+    font-family: sans-serif;
 }
 
 .tools {
@@ -426,6 +482,8 @@ h2 span {
     padding: 24px;
     border-radius: 20px;
     line-height: 23px;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
 }
 
 .storage {
@@ -438,6 +496,14 @@ h2 span {
     padding: 24px;
     border-radius: 20px;
     line-height: 23px;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+}
+
+.commands:hover,
+.tools:hover,
+.storage:hover {
+    transform: scale(1.05);
 }
 
 .short-note p{
@@ -450,6 +516,10 @@ h2 span {
     padding-bottom: 13px;
 }
 
+
+
+
+/* TAB PANE LOGIC  */
 
 input[type="radio"] {
     display: none;
@@ -499,6 +569,12 @@ label  {
     font-size: 13.45px;
 }
 
+
+
+
+
+/* TABPANE STYLING  */
+
 .tab-content {
     display: none;
     margin: 24px;
@@ -546,6 +622,8 @@ label  {
 
 
 
+
+
 /* LEADERBOARD SECTION  */
 
 .leaderboard-main {
@@ -558,7 +636,7 @@ label  {
     width: 1216px;
     height: 910px;
     border: 1px solid #FFFFFF33;
-    margin-top: 35px;
+    margin-top: 30px;
     border-radius: 24px;
     background: linear-gradient(315deg, #0f172a,#581c87,#0f172a);
     margin-bottom: 90px;
@@ -814,8 +892,10 @@ label  {
 
 
 
-/* BADGE GALLARY SECTION  */
 
+
+
+/* BADGE GALLARY SECTION  */
 
 .badge-gallary-environment {
     display: flex;
@@ -827,7 +907,7 @@ label  {
     width: 1230px;
     height: 935px;
     border: 1px solid #FFFFFF33;
-    margin-top: 35px;
+    margin-top: 30px;
     border-radius: 24px;
     background: linear-gradient(315deg, #0f172a,#581c87,#0f172a);
     margin-bottom: 90px;
@@ -859,7 +939,7 @@ label  {
 .common,.rare,.epic {
     width: 380px;
     height: 280px; 
-    background: linear-gradient(315deg,#492F61,#4B3F5D);
+    background: linear-gradient(315deg,#492B63,#54426A);
     backdrop-filter: blur(24px);
     border: 2px solid #736f6f;
     border-radius: 16px;
@@ -880,6 +960,10 @@ label  {
 .epic {
     filter: drop-shadow(0 2px 6px #5A2A89) drop-shadow(0 40px 50px #5A2A89);
 }
+
+
+
+/* STAR BLINKING ANIMATION  */
 
 #sparkle-icon {
     font-size: 28px;
@@ -1167,13 +1251,12 @@ label  {
   
   .Stats {
     width: 1165px;
-    height: 190px;
+    height: 185px;
     border-radius: 15px;
     border: 1px solid #8842a1;
     background: linear-gradient(to right, #572384,#421D46);
     backdrop-filter: blur(24px);
     margin-top: 30px;
-    padding: 20px;
   }
 
   .Stats h2{
