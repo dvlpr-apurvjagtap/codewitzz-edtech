@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning</title>
+    <link rel="stylesheet" href="styles/learning.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="Background">
+
+
+
+        <div class="left">
+            <div id="progress-box">
+                <div class="progress">
+                    <a id="back-btn" href="">
+                        <img src="/assets/icons/back.png" alt="">
+                        <span>Back to Course</span>
+                    </a>
+                    <h2>Web Full Stack Development</h2>
+                    <div id="progress-bar">
+                        <div id="lessons">
+                        </div>
+                    </div>
+                    <p>8 of 32 lessons completed</p>
+                </div>
+            </div>
+
+            <div id="dropdown">
+                <div class="drop">
+                    <button class="btn" onclick="myFunction()">
+                        <span>Web Fundamentals</span>
+                        <img src="assets/icons/rightarrow.png" alt="">
+
+                    </button>
+                    <div id="myDIV">
+                        <div class="course">
+                            <div class="log"><img src="/assets/icons/tik.png" alt=""></div>
+                            <div class="nam">
+                                <div class="txt">
+                                    <p>HTML5 & Semantic Markup</p>
+                                </div>
+                                <div class="time">
+                                    <p><span><img src="/assets/icons/time.png" alt=""> </span><span> 15 min </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course">
+                            <div class="log"><img src="/assets/icons/tik.png" alt=""></div>
+                            <div class="nam">
+                                <div class="txt">
+                                    <p>CSS3 & Flexbox/Grid</p>
+                                </div>
+                                <div class="time">
+                                    <p><span><img src="/assets/icons/time.png" alt=""> </span><span> 15 min </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="log"> <img src="/assets/icons/play.png" alt=""></div>
+                            <div class="nam">
+                                <div class="txt">
+                                    <p>JavaScript ES6+</p>
+                                </div>
+                                <div class="time">
+                                    <p><span><img src="/assets/icons/time.png" alt=""> </span><span> 15 min </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="log"><img src="/assets/icons/circle.png" alt=""></div>
+                            <div class="nam">
+                                <div class="txt">
+                                    <p>DOM Manipulation</p>
+                                </div>
+                                <div class="time">
+                                    <p><span><img src="/assets/icons/time.png" alt=""> </span><span> 15 min </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drop">
+                    <button class="btn">
+                        <span>React Basics</span>
+                        <img src="assets/icons/rightarrow.png" alt="">
+
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right">
+
+            <div>
+                <div id="video-container">
+                    <video id="video" controls>
+                        <source src="/assets/images/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="js-box">
+                    <div id="js">
+                        <div id="text">
+                            <h1>JavaScript ES6+ Fundamentals</h1>
+                            <p>Learn modern JavaScript features including arrow functions, destructuring, modules, and
+                                async/await.</p>
+                        </div>
+                        <div class="uplod-download">
+                            <button class="btn"><img src="/assets/icons/download.png" alt=""></button>
+                            <button class="btn"><img src="/assets/icons/upload.png" alt=""></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="control">
+                    <div class="detail-box">
+                        <span>
+                            Progress: 45%
+                        </span>
+
+                        <span>
+                            Duration: 25:30
+
+                        </span>
+
+                        <div id="xp">
+                            <img src="/assets/icons/Vector.png" alt="">
+                            <span>
+                                +25 XP
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="control-box">
+                        <button id="b1">
+                            Previous
+                        </button>
+                        <button id="b2">
+                            <img src="/assets/icons/camplit.png" alt="">
+                            Mark Complete
+                        </button>
+                        <button id=b3>
+                            Next Lesson
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar">
+                <div class="btn-group">
+                    <button class="tab" data-target="panel1"> <img src="/assets/icons/notes.png" alt=""> Notes</button>
+                    <button class="tab" data-target="panel2"><img src="/assets/icons/quizo.png" alt="">Quiz</button>
+                    <button class="tab" data-target="panel3"><img src="/assets/icons/asko.png" alt=""> Ask
+                        Mentor</button>
+                    <button class="tab" data-target="panel4"> <img src="/assets/icons/tipso.png" alt=""> Tips</button>
+                </div>
+
+                <div id="panel-container">
+                    <div id="panel1" class="panel active">
+                        <h3>
+                            <span><img src="/assets/icons/" alt=""></span>
+                            <span>Lesson Notes & Resources</span>
+                        </h3>
+                        <div id="key" class="lbox">
+                            <h4><span></span><span>Key Concepts</span></h4>
+
+                            <div id="key-box">
+                                <div class="concept">
+                                    <span style="  color:  #22D3EE;">•</span>
+                                    <span><Strong>Arrow Functions:</Strong> Concise function syntax with lexical this
+                                        binding</span>
+                                </div>
+                                <div class="concept">
+                                    <span style="color:#F472B6 ;">•</span>
+                                    <span><Strong>Destructuring:</Strong> Extract values from arrays and objects</span>
+                                </div>
+                                <div class="concept">
+                                    <span style="color: #FACC15;">•</span>
+                                    <span><Strong>Template Literals:</Strong> Enhanced string formatting with embedded
+                                        expressions</span>
+                                </div>
+                                <div class="concept">
+                                    <span style="color:#4ADE80 ;">•</span>
+                                    <span><Strong>Modules:</Strong> Import/export functionality for code
+                                        organization</span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="code" style="padding-bottom: 0%;" class="lbox">
+                            <h4><span></span><span>Code Examples</span>
+                                <div>
+                                    <textarea name="t" id="textbox">
+// Arrow Function
+const add = (a, b) => a + b;
+
+// Destructuring
+const {name, age} = person;
+
+// Template Literal
+const message = `Hello, ${name}!`;
+                                </textarea>
+
+                                </div>
+
+
+                        </div>
+                        <div id="add" class="lbox">
+                            <h4><span></span><span>Additional Resources</span></h4>
+
+                            <div id="key-box">
+                                <div class="concept">
+                                    <span><img src="/assets/icons/bluepage.png" alt=""></span>
+                                    <span> JavaScript ES6 Cheat Sheet (PDF)</span>
+                                    <span><img src="/assets/icons/download.png" alt=""></span>
+                                </div>
+                                <div class="concept">
+                                    <span><img src="/assets/icons/bluepage.png" alt=""></span>
+                                    <span> Practice Exercises</span>
+                                    <span><img src="/assets/icons/download.png" alt=""></span>
+                                </div>
+                                <div class="concept">
+                                    <span><img src="/assets/icons/bluepage.png" alt=""></span>
+                                    <span>MDN Documentation Links</span>
+                                    <span><img src="/assets/icons/download.png" alt=""></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="panel2" class="panel">
+                        <h3>
+                            <span><img src="/assets/icons/" alt=""></span>
+                            <span>Quick Quiz</span>
+                        </h3>
+                        <div id="qua" class="lbox">
+                            <div>
+                                <div id="qnum">
+                                    <span>Question 1 of 5</span>
+                                    <div id="xp">
+                                        <span> +50 XP</span>
+                                    </div>
+                                </div>
+                                <div class="quations">
+                                    <h3>What is the correct syntax for an arrow function?
+                                    </h3>
+
+                                    <form>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                                value="option1" checked>
+                                            <label class="form-check-label" for="radio1">function() => { return
+                                                x;}</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                                value="option2">
+                                            <label class="form-check-label" for="radio2">() => { return x; }</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio3" name="optradio"
+                                                value="option3">
+                                            <label class="form-check-label" for="radio3">=> () { return x; }3</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radio4" name="optradio"
+                                                value="option4">
+                                            <label class="form-check-label" for="radio4">unction => () { return
+                                                x;}</label>
+                                        </div>
+                                        <button type="submit" class="form-check">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="skip"></div>
+
+                        </div>
+                    </div>
+                    <div id="panel3" class="panel">
+                        <h3>
+                            <span><img src="/assets/icons/" alt=""></span>
+                            <span>Ask Your Mentor</span>
+                        </h3>
+                        <div id="write" class="lbox">
+                            <div class="typebox">
+                                <textarea name="t" id="askmen"
+                                   >
+
+                                </textarea>
+                            </div>
+                            <div class="sendbox">
+                                <div id="tip">
+                                    <span>💡</span>
+                                    <p>Tip: Be specific about what you're struggling with</p>
+                                </div>
+
+                                <button>Send Question</button>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="panel4" class="panel">
+                        <h3>
+                            <span><img src="/assets/icons/" alt=""></span>
+                            <span>Quick Tips</span>
+                        </h3>
+                        <div id="pro" class="lbox">
+                            <h4>Pro Tip</h4>
+                            <p>Use arrow functions for shorter, cleaner code, but remember they don't have their own
+                                'this' context.</p>
+                        </div>
+                        <div id="best" class="lbox">
+                            <h4>Best Practice</h4>
+                            <p> Always use const for variables that won't be reassigned, and let for variables that will
+                                change.</p>
+
+                        </div>
+                        <div id="rem" class="lbox">
+                            <h4>Remember</h4>
+                            <p>Destructuring can make your code more readable when working with objects and arrays.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+
+                    const buttons = document.querySelectorAll('.tab');
+                    const panels = document.querySelectorAll('.panel');
+
+                    buttons.forEach(btn => btn.addEventListener('click', () => {
+
+                        buttons.forEach(b => b.classList.remove('active'));
+                        panels.forEach(p => p.classList.remove('active'));
+
+                        btn.classList.add('active');
+                        document.getElementById(btn.dataset.target).classList.add('active');
+                    }));
+                </script>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myDIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
