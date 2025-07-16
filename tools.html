@@ -4,20 +4,398 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles/tools.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Tools Section</title>
 </head>
 <body>
-    <!-- MAIN CONTAINER  -->
-    <div class="container"> 
-        <div class="heading"> <!-- HEADING -->
-            <h1>Learning Tools </h1>
+    <section class="tools-section">
+        <input type="radio" name="tabs" id="tab1" checked />
+        <input type="radio" name="tabs" id="tab2" />
+        <input type="radio" name="tabs" id="tab3" />
+        <input type="radio" name="tabs" id="tab4" /> 
+        <!-- MAIN CONTAINER  -->
+        <div class="container">
+          <div class="heading">
+            <!-- HEADING -->
+            <h1>Learning Tools</h1>
             <span>🛠️</span>
+          </div>
+          <p id="tools-para1">Practice, compete, and showcase your skills</p>
+          <!-- PARAGRAPH1 -->
         </div>
-        <p id="tools-para1">Practice, compete, and showcase your skills</p> <!-- PARAGRAPH1 -->
-    </div>
+  
+        <!-- TAB SECTION -->
+        <div class="tab-bar">
+          <label for="tab1" id="code-tab"
+            ><span id="code-icon">💻</span> Code Playground</label
+          >
+          <label for="tab2" id="cloud-tab"
+            ><span id="cloud-icon">☁️</span> Cloud Lab</label
+          >
+          <label for="tab3" id="leaderboard"
+           ><span id="trophy-icon">🏆</span> Leaderboard</label
+          >
+          <label for="tab4" id="Badge-gallary"
+           ><span id="cloud-icon">🎖️</span> Badge Gallery</label
+          >
+        </div>
+  
+         <!-- CODE PLAYGROUND SECTION  -->
 
-    <!-- TAB SECTION -->
-    <div class="tab-bar"></div>
+        <div class="tab-content" id="content1">
+          <div class="code-playground-section">
+            <div class="main-containt">
+              <div class="containt">
+                <div class="code-heading">
+                  <h2 id="code-text"><span>💻 </span>Code Playground</h2>
+                  <div class="btns">
+                    <button id="save-btn">
+                      <i class="ri-save-line"></i>Save
+                    </button>
+                    <button id="share-btn">
+                      <i class="ri-share-2-line"></i>Share
+                    </button>
+                  </div>
+                </div>
+  
+                <div class="grid">
+                  <div class="editor">
+                    <div class="text">
+                      <h4 id="code-editor"><span>✨ </span>Code Editor</h4>
+                      <select id="language-select">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="html">HTML/CSS</option>
+                      </select>
+                    </div>
+  
+                    <div class="note">
+                      <textarea id="note-area">
+// Write your JavaScript code here
+  function greet(name) {
+    return `Hello, ${name}!`;
+  }
+
+  console.log(greet("World"));</textarea
+                      >
+                    </div>
+  
+                    <button id="run">
+                      <i class="ri-play-large-line"></i> Run Code
+                    </button>
+                  </div>
+  
+                  <div class="output">
+                    <h4 id="output-heading"><span>📊 </span>Output & Results</h4>
+                    <div class="result">
+                      <span id="node">node playground.js</span> <br />
+                      <span id="hello">Hello, World!</span> <br /><br />
+                      <span id="program">✅ Program executed successfully</span>
+                    </div>
+  
+                    <div class="test-case">
+                      <h4 id="test-case-heading"><span>🧪 </span>Test Cases</h4>
+                      <div class="test-case-item">
+                        <span class="test-case-name">greet("Alice")</span>
+                        <span class="test-case-pass">✅ passed</span>
+                      </div>
+  
+                      <div class="test-case-item">
+                        <span class="test-case-name">greet("Bob")</span>
+                        <span class="test-case-pass">✅ passed</span>
+                      </div>
+  
+                      <div class="test-case-item">
+                        <span class="test-case-name">greet("")</span>
+                        <span class="test-case-fail">❌ failed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLOUD LAB SECTION  -->
+  
+        <div class="tab-content" id="content2">
+          <section class="cloud-lab-section">
+            <div class="cloud-lab-environment">
+              <div class="cloud-environment">
+                <h2 id="cloud-lab-heading">
+                  <span>☁️ </span>Cloud Lab Environment
+                </h2>
+                <button id="configure-btn">Configure</button>
+  
+                <div class="console">
+                  <p id="command-line">codewitzz@cloudlab:~$</p> <br/>
+                  <p id="welcome">Welcome to Codewitzz Cloud Lab! 🚀</p><br/>
+                  <p id="cmd">Linux Ubuntu 20.04 LTS</p><br>
+                 <p id="node">✅ Node.js v18.0.0 installed<br></p> 
+                  <p id="python">✅ Python 3.9.0 installed<br></p>
+                  <p id="command-line"> codewitzz@cloudlab:~$ ls</p><br>
+                  <p id="folders">📁 projects/ 📁 assignments/ 📁 resources/<br></p><br>
+                  <p id="command-line">codewitzz@cloudlab:~$  <span id="cursor">|</span></p>
+                </div>
+  
+                <div class="short-note">
+                  <div class="commands">
+                    <h3><span>⚡ </span>Quick Commands</h3>
+                    <p>
+                      ls - list files<br/>
+                      cd - change directory<br/>
+                      mkdir - create directory<br/>
+                      npm install - install packages
+                    </p>
+                  </div>
+  
+                  <div class="tools">
+                    <h3><span>🛠️ </span> Pre-installed Tools</h3>
+                    <p>
+                      ✅ Node.js & npm<br />
+                      ✅ Python & pip<br />
+                      ✅ Git<br />
+                      ✅ VS Code Server
+                    </p>
+                  </div>
+  
+                  <div class="storage">
+                    <h3><span>💾 </span>Storage</h3>
+                    <p>
+                      Free: 5GB<br />
+                      Used: 1.2GB<br />
+                      Available: 3.8GB
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+ 
+
+       <!-- LEADERBOARD SECTION  -->
+
+        <div class="tab-content" id="content3">
+          <section class="leader-board-section">
+            <div class="leaderboard-main">
+              <div class="leaderboard-section">
+                <div class="board">
+                    <h2 id="leaderboard-heading"><span>🏆 </span>Global Leaderboard</h2>
+                  <select id="all-track">
+                    <option value="All Track">All Track</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Flutter Development">Flutter Development</option>
+                    <option value="Data Science">Data Science</option>
+                  </select>
+                </div>
+                
+
+                  <div class="first-winner">
+                    <div class="first-left">
+                      <div class="rank">1</div><i class="ri-vip-crown-line" style="color: gold;" id="crown"></i>
+                      <img src="images\profile-pic1.webp" id="winner">
+                      <h3 id="winner-name">Priya Sharma<br><span id="winner-XP">15,420 XP</span></h3>
+                    </div>
+
+                    <div class="first-right">
+                      <div class="legend">Coding Legend</div>
+                      <i class="fas fa-medal" style="color: gold;" id="gold-medal"></i>
+                    </div>
+                  </div>
+
+
+                  <div class="first-winner">
+                    <div class="first-left">
+                      <div class="second-rank">2</div>
+                      <img src="images\profile-pic2.webp" id="winner">
+                      <h3 id="winner-name">Rahul Gupta<br><span id="winner-XP">14,850 XP</span></h3>
+                    </div>
+
+                    <div class="first-right">
+                      <div class="second-legend">Code Master</div>
+                      <i class="fas fa-medal" style="color: #9ca3af;" id="gold-medal"></i>
+                    </div>
+                  </div>
+
+                  <div class="first-winner">
+                    <div class="first-left">
+                      <div class="third-rank">3</div>
+                      <img src="images\profile-pic1.webp" id="winner">
+                      <h3 id="winner-name">Sneha Patel<br><span id="winner-XP">13,990 XP</span></h3>
+                    </div>
+
+                    <div class="first-right">
+                      <div class="third-legend">Tech Wizard</div>
+                      <i class="fas fa-medal" style="color: #f97316;" id="gold-medal"></i>
+                    </div>
+                  </div>
+
+                  <div class="second-winner">
+                    <div class="first-left">
+                      <div class="fourth-rank">4</div>
+                      <img src="images\profile-pic2.webp" id="winner">
+                      <h3 id="winner-name">Arjun Singh<br><span id="winner-XP">11,200 XP</span></h3>
+                    </div>
+
+                    <div class="first-right">
+                      <div class="fourth-legend">Rising Star</div>
+                    </div>
+                  </div>
+
+                  <div class="second-winner">
+                    <div class="first-left">
+                      <div class="fourth-rank">5</div>
+                      <img src="images\profile-pic1.webp" id="winner">
+                      <h3 id="winner-name">Kavya Reddy<br><span id="winner-XP">15,420 XP</span></h3>
+                    </div>
+
+                    <div class="first-right">
+                      <div class="fourth-legend">Code Ninja</div>
+                    </div>
+                  </div>
+
+                  <div class="third-winner">
+                    <div class="first-left">
+                      <div class="fourth-rank">15</div>
+                      <img src="images\profile-pic1.webp" id="winner">
+                      <h3 id="winner-name">You 👈You!<br><span id="winner-XP">8,420 XP</span></h3>
+                    </div>
+
+                    <div class="first-right">
+                      <div class="fourth-legend">Future Dev</div>
+                    </div>
+                  </div>
+
+                <div class="leaderboard-footer"> 
+                  <p>🚀 Keep learning to climb the leaderboard!</p>
+                  <button id="View">View Full Rankings</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+
+        <!-- BADGE GALLERY SECTION  -->
+
+        <div class="tab-content" id="content4">
+          <section class="badge-gallary-section">
+            <div class="badge-gallary-environment">
+              <div class="badge-gallary-container">
+                <h1>🎖️ Badge Gallery</h1>
+                <div class="grid-gallary">
+                  <div class="common">
+                    <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon"></iconify-icon>
+                    <div class="badge-div-icon">🚀</div>
+                    <div class="common-badge">Common</div>
+                    <h1 id="badge-title">First Step</h1>
+                    <p id="badge-description-common">Complete your first lesson</p> 
+                    <h3 id="unlocked"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
+                  </div>
+
+                  <div class="rare">
+                    <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon"></iconify-icon>
+                    <div class="badge-div-icon">⚔️</div>
+                    <div class="rare-badge">Rare</div>
+                    <h1 id="badge-title">Code Warrior</h1>
+                    <p id="badge-description-rare">Write 100 lines of code</p> 
+                    <h3 id="unlocked"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
+                  </div>
+
+                  <div class="epic">
+                    <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon"></iconify-icon>
+                    <div class="badge-div-icon">🔥</div>
+                    <div class="epic-badge">Epic</div>
+                    <h1 id="badge-title">Streak Master</h1>
+                    <p id="badge-description-epic">Learn for 7 consecutive days</p> 
+                    <h3 id="unlocked"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
+                  </div>
+
+                  <div class="quiz">
+                    <div class="badge-div-icon-bottom">🧠</div>
+                    <div class="Legendary-badge">Legendary</div>
+                    <h1 id="badge-title">Quiz Champion</h1>
+                    <p id="badge-description-quiz">Score 100% on 5 quizzes</p> 
+
+                    <div class="progress-wrapper">
+                      <div class="progress-labels">
+                        <span>Progress</span>
+                        <span>3/5</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="project">
+                    <div class="badge-div-icon-bottom">🎨</div>
+                    <div class="epic1-badge">Epic</div>
+                    <h1 id="badge-title">Project Master</h1>
+                    <p id="badge-description-epic1">Complete 10 projects</p> 
+
+                    <div class="progress-wrapper">
+                      <div class="progress-labels">
+                        <span>Progress</span>
+                        <span>4/10</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="mentor">
+                    <div class="badge-div-icon-bottom">👨‍🏫</div>
+                    <div class="Mythic-badge">Mythic</div>
+                    <h1 id="badge-title">Mentor Helper</h1>
+                    <p id="badge-description-mentor">Help 20 fellow students</p>
+                    
+                    <div class="progress-wrapper">
+                      <div class="progress-labels">
+                        <span>Progress</span>
+                        <span>2/20</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 10%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="Stats">
+                  <div class="stat-title"> <h2><span>🏆 </span>Your Badge Stats</h2></div>
+                  <div class="badge-stat">
+                    <h1 id="unlocked-badge">3<br><span>Unlocked</span></h1>
+                    <h1 id="totalxp">8,420<br><span>Total XP</span></h1>
+                    <h1 id="global">15<br><span>Global Rank</span></h1>
+                    <h1 id="day-streak">12<br><span>Day Streak</span></h1>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+    </section>
+        
+
 </body>
 </html>
