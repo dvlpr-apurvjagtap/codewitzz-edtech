@@ -1,7 +1,16 @@
+
 .Background{
 min-height: 100vh;
 background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
 display: flex;
+  
+}
+
+body{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .left{
@@ -497,7 +506,7 @@ font-weight: 500;
 }
 
 #askmen{
-width: 100%;
+width: 95%;
 height: 8rem;
 padding: 1rem;
 background-color: rgba(255, 255, 255, 0.05);
@@ -566,4 +575,8 @@ border: 1px solid rgba(74, 222, 128, 0.3);
 backdrop-filter: blur(1rem);
 border-radius: 1rem;
 padding: 0 2rem 0 2rem;
+}
+
+.typebox textarea{
+  width: 90%;
 }
