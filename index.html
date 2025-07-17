@@ -1,39 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codewitzz</title>
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <main>
-        <nav>
-            <div id="logo">Codewitzz</div>
-            <a class="elem" href="index.html">Home</a>
-            <a class="elem" href="course.html">Course</a>
-            <a class="elem" href="internship.html">Internship</a>
-            <a class="elem" href="tools.html">Tools</a>
-            <a class="elem" href="dashboard.html">Dashboard</a>
-            <a class="elem" href="#">CodeZ: 1,250</a>  
-            <a class="elem" href="#">Sign In</a>    
+    <navbar class="navbar">
+        <div class="logo"><img src="assets/icons/logo.png" alt=""></div>
+        <nav class="nav" id="nav">
+            <div class="home-box"> <a href="">🏠 Home</a></div>
+            <a href="">📚 Course</a>
+            <a href="">💼 Internship</a>
+            <a href="">🛠 Tools</a>
+            <a href="">📊 Dashbord</a>
+            <a href="" class="coin-box" id="coin-box">🏆 1,250 CodeZ</a>
+            <button class="Sign-in-btn">Sign in</button>
         </nav>
-        
-        <div id="home">
-            <h1>
-                welcome to codewitzz
-            </h1>
+    </navbar>
+
+
+    <section id="hero">
+        <div class="hero-main">
+            <div class="hero-small-text" align="center">
+                <p><img src="assets/icons/Star-icon.png" alt="">India's #1 Career-Ready Program <img
+                        src="assets/icons/star2.png" alt=""></p>
+
+            </div>
+
+            <div class="hero-large-text">
+                <p align="center"><span class="level-text"> Level Up</span> <br>Your Tech Game</p>
+            </div>
+            <p class="hero-text" align="center">Master coding skills through<span class="gamified-text"> gamified
+                    learning</span>, earn <span class="coins"> CodeZ coins </span>, and land your
+                <br>dream tech job 🚀.
+            </p>
+            <div class="hero-btn" align="center">
+                <button class="hero-btn1">Start Learning Now <img src="assets/icons/Component 1.png" alt=""></button>
+                <button class="hero-btn2">Explore Internship <img src="assets/icons/SVG_margin.png" alt=""></button>
+            </div>
+            <div class="flex-box">
+                <div class="stud">
+                    <img src="assets/icons/Stud.png" alt="">
+                    <div class="s-flex">
+                        <h3>50K+</h3>
+                        <p>Students</p>
+                    </div>
+                </div>
+                <div class="stud" id="job">
+                    <img src="assets/icons/Placenment.png" alt="">
+                    <div class="s-flex">
+                        <h3>95%</h3>
+                        <p>Job Placement</p>
+                    </div>
+                </div>
+                <div class="stud">
+                    <img src="assets/icons/star2.png" alt="">
+                    <div class="s-flex">
+                        <h3>4.9</h3>
+                        <p>Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container" id="img-container">
+                <div class="sub-con">
+                    <img src="assets/images/Studentslearning.png" alt="">
+                </div>
+                <div class="week">
+                    <h3>26 Week</h3>
+                    <p>Complete Program</p>
+                </div>
+                <div class="mentor">
+                    <h3>1:1 Mentor</h3>
+                    <p>Personal Guid</p>
+                </div>
+                <div class="certify">
+                    <h3>🏆 Certified</h3>
+                    <p>Industry Ready</p>
+                </div>
+
+
+            </div>
+
+
+            <section class="">
+                <div class="why-choose" align="center">
+                    <p><img src="assets/icons/Component2.png" alt="">Why Choose Codewitzz? <img
+                            src="assets/icons/SVG_margin1.png" alt=""></p>
+                </div>
+                <h2 align="center" class="need-text">Everything You Need to<span id="need-text"> Succeed</span></h2>
+                <p align="center" id="p-text">Our comprehensive platform combines cutting-edge technology with proven
+                    learning<br>
+                    methodologies to accelerate your career growth 🚀</p>
+
+                <div class="containers1">
+                    <div class="sub-div">
+                        <div id="elm">
+                            <img src="assets/icons/video-icon.png" alt="">
+                            <h3 align="center">HD Video Lessons</h3>
+                            <p align="center">Crystal clear recorded lessons with
+                                expert instructors covering every
+                                concept in detail.</p>
+                        </div>
+                        <div id="elm">
+                            <img src="assets/icons/Quizz.png" alt="">
+                            <h3 align="center">Interactive Quizzes</h3>
+                            <p align="center">Test your knowledge with smart
+                                quizzes that adapt to your
+                                learning pace.</p>
+                        </div>
+                        <div id="elm">
+                            <img src="assets/icons/Certi-icon.png" alt="">
+                            <h3 align="center">Cool Certificates</h3>
+                            <p align="center">Earn industry-recognized
+                                certificates and showcase your
+                                achievements.</p>
+                        </div>
+                        <div id="elm"> <img src="assets/icons/project-icon.png" alt="">
+                            <h3 align="center">Real Projects</h3>
+                            <p align="center">Build actual projects that you can
+                                proudly add to your portfolio.</p>
+                        </div>
+                    </div>
+                    <div class="sub-div">
+                        <div id="elm">
+                            <img src="assets/icons/mentor-icon.png" alt="">
+                            <h3 align="center">Live Mentorship</h3>
+                            <p align="center">Get personalized guidance from
+                                industry experts in weekly
+                                sessions.</p>
+                        </div>
+                        <div id="elm">
+                            <img src="assets/icons/job-place-icon.png" alt="">
+                            <h3 align="center">Job Placement</h3>
+                            <p align="center">95% placement rate with top
+                                companies through our extensive
+                                network.</p>
+                        </div>
+                        <div id="elm">
+                            <img src="assets/icons/codez-coin-icon.png" alt="">
+                            <h3 align="center">CodeZ Coins</h3>
+                            <p align="center">Earn coins as you learn and
+                                redeem them for discounts and
+                                exclusive content.</p>
+                        </div>
+                        <div id="elm">
+                            <img src="assets/icons/gami-lern-icon.png" alt="">
+                            <h3 align="center">Gamified Learning</h3>
+                            <p align="center">Level up your skills with streaks,
+                                XP points, and achievement
+                                badges.
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="live-div">
+                    <div class="activ-lern">
+                        <p><span id="h-div">🟢 50,000+ </span>
+                            Active Learners</p>
+                    </div>
+                    <div class="company">
+                        <p><span id="h-div">🔵 1,000+</span>
+                            companies Hiring</p>
+                    </div>
+
+                    <div class="success-rate">
+                        <p><span id="h-div">🟡 95%</span>
+                            Job Success Rate</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="choose-path">
+                <div class="cards">
+                    <div class="why-choose-path" id="Y-path">
+                        <p align="center"><img src="assets/icons/Arrow-icon.png" alt=""> Choose Your Path <img
+                                src="assets/icons/goal-icon.png" alt=""></p>
+
+                    </div>
+                    <h2 align="center" class="need-text">Master<span id="need-text"> In-Demand</span> Skills</h2>
+                    <p align="center" id="p-text">Choose from our industry-leading courses designed by experts and loved
+                        by students<br>
+                        worldwide 💜</p>
+
+                    <div class="path-card">
+                        <div class="card">
+                            <img src="assets/images/Full-stack.png" alt="" id="card-img">
+                            <div class="card-text">
+                                <h3> Web Full Stack</h3>
+                                <p>Master React, Node.js & MongoDB</p>
+                                <p id="card-p-text">Build complete web applications from frontend to
+                                    backend with modern technologies.</p>
+                                <div class="card-rate">
+                                    <div class="element">
+                                        <img src="assets/icons/Star-icon.png" alt="">
+                                        <span id="sub-rate1"> 4.9 </span>
+
+                                    </div>
+                                    <div class="element">
+                                        <img src="assets/icons/Stud1.png" alt="">
+                                        <span id="sub-rate">15k+ students</span>
+                                    </div>
+                                    <div class="element">
+                                        <img src="assets/icons/time-icon.png" alt="">
+                                        <span id="sub-rate"> 12 weeks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="c-btn">React.js</div>
+                                <div class="c-btn">Node.js</div>
+                                <div class="c-btn">MongoDB</div>
+                                <div class="c-btn">Express.js </div>
+                            </div>
+                            <div class="price-div">
+                                <div class="price">
+                                    <h3>₹ 9,999</h3>
+
+                                </div>
+                                <div class="price1">
+                                    <p>₹14,999</p>
+                                </div>
+                                <button class="p-btn">33% OFF</button>
+                            </div>
+
+                            <button class="start-btn">Start Learning Now
+                                <img src="assets/icons/Component 1.png">
+                            </button>
+
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/Full-stack.png" alt="" id="card-img">
+                            <div class="card-text">
+                                <h3>Data Science</h3>
+                                <p>Python, ML & AI Fundamentals</p>
+                                <p id="card-p-text">Master data analysis, machine learning, and AI to
+                                    become a data scientist.</p>
+                                <div class="card-rate">
+                                    <div class="element">
+                                        <img src="assets/icons/Star-icon.png" alt="">
+                                        <span id="sub-rate1"> 4.9 </span>
+
+                                    </div>
+                                    <div class="element">
+                                        <img src="assets/icons/Stud1.png" alt="">
+                                        <span id="sub-rate">12k+ students</span>
+                                    </div>
+                                    <div class="element">
+                                        <img src="assets/icons/time-icon.png" alt="">
+                                        <span id="sub-rate"> 16 weeks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="c-btn">Python</div>
+                                <div class="c-btn">ML</div>
+                                <div class="c-btn">TensorFlow</div>
+                                <div class="c-btn">DSA </div>
+                            </div>
+                            <div class="price-div">
+                                <div class="price">
+                                    <h3>₹11,999</h3>
+
+                                </div>
+                                <div class="price1">
+                                    <p>₹16,999</p>
+                                </div>
+                                <button class="p-btn">29% OFF</button>
+                            </div>
+
+                            <button class="start-btn" id="btn2-clr">Start Learning Now
+                                <img src="assets/icons/Component 1.png">
+                            </button>
+
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/Full-stack.png" alt="" id="card-img">
+                            <div class="card-text">
+                                <h3>Flutter Development</h3>
+                                <p>Build Cross-Platform Mobile Apps</p>
+                                <p id="card-p-text">Create stunning mobile apps for iOS and Android
+                                    with a single codebase.</p>
+                                <div class="card-rate">
+                                    <div class="element">
+                                        <img src="assets/icons/Star-icon.png" alt="">
+                                        <span id="sub-rate1"> 4.8 </span>
+
+                                    </div>
+                                    <div class="element">
+                                        <img src="assets/icons/Stud1.png" alt="">
+                                        <span id="sub-rate">9k+ students</span>
+                                    </div>
+                                    <div class="element">
+                                        <img src="assets/icons/time-icon.png" alt="">
+                                        <span id="sub-rate"> 10 weeks</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="c-btn">Flutter</div>
+                                <div class="c-btn">Dart</div>
+                                <div class="c-btn">Firebase</div>
+                                <div class="c-btn">State MGT </div>
+                            </div>
+                            <div class="price-div">
+                                <div class="price">
+                                    <h3>₹8,999</h3>
+
+                                </div>
+                                <div class="price1">
+                                    <p>₹12,999</p>
+                                </div>
+                                <button class="p-btn">31% OFF</button>
+                            </div>
+
+                            <button class="start-btn" id="btn-clr">Start Learning Now
+                                <img src="assets/icons/Component 1.png">
+                            </button>
+
+                        </div>
+                    </div>
+            </section>
+            <div class="ready-main">
+                <div class="why-choose" align="center" id="ready-box">
+                    <p><img src="assets/icons/Component2.png" alt="" class="ready-img">Complete Career Transformation
+                        <img src="assets/icons/SVG_margin1.png" alt="">
+                    </p>
+                </div>
+                <h2 align="center" class="ready">Ready for the<span id="need-text"> Ultimate Challenge?</span></h2>
+                <p align="center" id="p-text " class="p1-text">Join our 26-week internship program and transform from
+                    beginner to<br>
+                    industry-ready professional 🚀</p>
+                <div class="flex-box" id="flex-box1">
+                    <div class="stud">
+                        <div class="s-flex">
+                            <h3>26 Week</h3>
+                            <p>Complete program</p>
+                        </div>
+                    </div>
+                    <div class="stud" id="job">
+                        <div class="s-flex2">
+                            <h3>95%</h3>
+                            <p>Job Placement</p>
+                        </div>
+                    </div>
+                    <div class="stud">
+                        <div class="s-flex3">
+                            <h3>₹8.5L</h3>
+                            <p>₹Avg Salary</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="intern-btn" id="btn-clr1">Start Learning Now
+                    <img src="assets/icons/Component 1.png">
+                </button>
+
+            </div>
         </div>
-        
-        
+
+        </div>
+    </section>
 
 
 
+    <section class="achievements">
+        <div class="achive-main">
+            <div class="achive-text">
+                <h2 align="center" class="achive-head">Success Storis & Achievements</h2>
+                <p align="center" id="achive-p">Join thousands of students who have transformed their careers with
+                    Codewitzz. See <br>
+                    their stories and earned certificates.</p>
+            </div>
 
-        
+            <div class="stud-story-main">
+                <div class="Storeis1">
+                    <h2 id="stud-say">What Our Students Say</h2>
+                    <div class="priya" id="st">
+                        <div class="priya-div">
+                            <img src="assets/images/Priya.png" alt="">
+                            <div class="priya-text">
+                                <span id="p-name">Priya Sharma</span>
+                                <p> Full Stack Developer at TCS</p>
+                            </div>
+                        </div>
+                        <div class="priya-rating">
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
 
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
 
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
 
-    </main>
+                            <img src="assets/icons/Rating-icon.png " alt="" id="star1">
+
+                        </div>
+                        <p class="reviev">"Codewitzz transformed my career completely. The hands-on projects and
+                            mentorship helped me land my dream job in just 6 months!"</p>
+                        <h4 id="now-work">Now at TCS</h4>
+                    </div>
+
+                    <div class="priya" id="st">
+                        <div class="priya-div">
+                            <img src="assets/images/Priya.png" alt="">
+                            <div class="priya-text">
+                                <span id="p-name">Sneha Patel</span>
+                                <p> Data Scientist at Infosys</p>
+                            </div>
+                        </div>
+                        <div class="priya-rating">
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+
+                            <img src="assets/icons/Rating-icon.png " alt="" id="star1">
+
+                        </div>
+                        <p class="reviev">"The CodeZ coin system motivated me to complete courses faster. I earned
+                            enough coins to unlock advanced courses for free!"</p>
+                        <h4 id="now-work" class="n-work">Now at Infosys</h4>
+                    </div>
+
+                    <div class="priya" id="st">
+                        <div class="priya-div">
+                            <img src="assets/images/Rahul Gupta.png" alt="">
+                            <div class="priya-text">
+                                <span id="p-name">Rahul Gupta</span>
+                                <p> Full Stack Developer at TCS</p>
+                            </div>
+                        </div>
+                        <div class="priya-rating">
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+
+                            <img src="assets/icons/Rating-icon.png" alt="" id="star1">
+
+                            <img src="assets/icons/Rating-icon.png " alt="" id="star1">
+
+                        </div>
+                        <p class="reviev">""The internship program is incredible. Real projects, amazing mentors, and
+                            the gamification made learning so engaging!"</p>
+                        <h4 id="now-work" class="n-work">Now at Flipkart</h4>
+                    </div>
+
+                </div>
+
+                <div class="certificate">
+                    <h2 id="stud-say">Industry-Recognized Certificates</h2>
+                    <div class="c1" id="f-stack">
+                        <img src="assets/icons/Background+Shadow.png" alt="">
+                        <div class="c1-text">
+                            <h3>Full Stack Developer</h3>
+                            <p>Certificate of Completion</p>
+                        </div>
+                    </div>
+                    <div class="c1" id="f-m-d">
+                        <div class="c1" id="f-stack">
+                            <img src="assets/icons/Background+Shadow.png" alt="">
+                            <div class="c1-text">
+                                <h3>Flutter Mobile Development</h3>
+                                <p>Certificate of Completion</p>
+                            </div>
+
+                        </div>
+                        <div class="c1">
+                            <div class="c1" id="f-stack">
+                                <img src="assets/icons/Background+Shadow.png" alt="">
+                                <div class="c1-text">
+                                    <h3>Data Science Mastery</h3>
+                                    <p>Certificate of Completion</p>
+                                </div>
+                            </div>
+                            <div class="c2">
+                                <h3 id="c2-h3">Join 95% Successful Graduates</h3>
+                                <p id="c2-p">Who landed jobs within 6 months of completion</p>
+                                <button class="c2-btn" id="btn-clr1">Start Learning Now
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section class="codez-coin">
+        <div class="codez-main">
+            <div id="code-h">
+                <p align="center"> Gamified Learning Experience</p>
+
+            </div>
+
+            <div class="codez-text">
+                <h2 align="center" class="codez-head">CodeZ Coins: Learn More, <span class="Earn-more">Earn More!</span>
+                </h2>
+                <p align="center" id="codez-p">Get rewarded for every step of your learning journey. Earn CodeZ coins
+                    through<br>
+                    activities and redeem them for exclusive benefits and discounts.</p>
+                <div class="coinz-main">
+                    <div class="how-to-ern">
+                        <h2 id="stud-say">How to Earn CodeZ Coins
+                        </h2>
+
+                        <div class="c-c">
+                            <p>Complete a lesson</p>
+                            <div class="c-sub">
+                               <img src="assets/icons/point-icon.png" alt="">
+                                +10
+                            </div>
+                        </div>
+                        <div class="c-c">
+                            <p>Pass quiz (80%+)</p>
+                            <div class="c-sub">
+                               <img src="assets/icons/point-icon.png" alt="">
+                                +25
+                            </div>
+                        </div>
+                         <div class="c-c">
+                            <p>Submit a project</p>
+                            <div class="c-sub">
+                               <img src="assets/icons/point-icon.png" alt="">
+                                +100
+                            </div>
+                        </div>
+                         <div class="c-c">
+                            <p>Daily login strek (7 Days )</p>
+                            <div class="c-sub">
+                               <img src="assets/icons/point-icon.png" alt="">
+                                +50
+                            </div>
+                        </div>
+                         <div class="c-c">
+                            <p>Refer a friend</p>
+                            <div class="c-sub">
+                               <img src="assets/icons/point-icon.png" alt="">
+                                +500
+                            </div>
+                        </div>
+                         <div class="c-c">
+                            <p>Course completion</p>
+                            <div class="c-sub" >
+                               <img src="assets/icons/point-icon.png" alt="">
+                                +1000
+                            </div>
+                        </div>
+                        <div class="c-c" id="c-c1">
+                            <img src="assets/icons/Balance.png" alt="">
+                            <h2>Your Current Balance</h2>
+                            <h1>1,250 CodeZ</h1>
+                            <p>Keep learning to earn more!</p>
+                        </div>
+                    </div>
+
+                    <div class="Redeem">
+                        <h2 id="stud-say">Redeem Your Coins   </h2>
+                        <div class="Redm">
+                            <img src="assets/icons/Dicount-icon.png" alt="">
+                            <div class="sub-redm">
+                               <span id="sub-head"> Course Discounts</span> <br>
+                              <p class="sub-t"> Use coins to get up to 50% off on new courses</p>
+                                <div class="cost">
+                                    <p>Cost: 500-2000 coins</p>
+                                    <button class="redm-btn">Redeem</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                       
+                        <div class="Redm">
+                            <img src="assets/icons/trofee-icon.png" alt="">
+                            <div class="sub-redm">
+                               <span id="sub-head"> Premium Content</span> <br>
+                              <p class="sub-t"> Unlock exclusive masterclasses and workshops</p>
+                                <div class="cost">
+                                    <p>Cost: 1000-3000 coins</p>
+                                    <button class="redm-btn">Redeem</button>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="Redm">
+                            <img src="assets/icons/growth-icon.png" alt="">
+                            <div class="sub-redm">
+                               <span id="sub-head"> Certification Fast Track</span> <br>
+                              <p class="sub-t"> Skip waiting periods for certificate generation</p>
+                                <div class="cost">
+                                    <p>Cost: 300-800 coins</p>
+                                    <button class="redm-btn">Redeem</button>
+                                </div>
+                            </div>
+
+                </div>
+                <div class="Redm" id="redm2">
+                    <h3>Bonus Multiplier Active!</h3>
+                    <p>Complete 3 lessons today to get 2x coins</p>
+                    <div class="sub-redm2">
+                        <h1>2x</h1>
+                        <p>Multiplier</p>
+                    </div>
+                </div>
+    </section>
+
 </body>
+
 </html>
