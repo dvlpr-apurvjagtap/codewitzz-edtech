@@ -6,13 +6,12 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background:linear-gradient(to right, #111827, #581C87, #111827);
+  background:linear-gradient(to right, #131b2c, #581C87);
   color: white;
   text-align: center;
   padding: 60px 0px;
   padding-bottom: 0.1px;
 }
-
 
 .badge {
   display: inline-block;
@@ -788,7 +787,7 @@ transform: translateY(-5px) scale(1.06);
 
 .transform-background {
   
-  background:linear-gradient(to right, #581C87, #3B0764, #111827);
+  background:linear-gradient(to right, #8a1c72, #3B0764, #8a1c72);
   padding-top: 4rem;
   padding-left: 0.1rem;
   padding-bottom: 4rem;
