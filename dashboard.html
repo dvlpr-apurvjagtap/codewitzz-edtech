@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Section</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Welcome back, <span class="gradient-text">Priya!</span> 👋</h1>
+        <p>Ready to level up your skills today?</p>
+        <!--------body page division------>
+        <div id="dash-div">
+            <div class="streak">
+                <div class="icon">🔥</div>
+                <div class="value">12</div>
+                <div class="label">Day Streak <span>🔥</span></div>
+            </div>
+            <div class="codez">
+                <div class="icon">⚡</div>
+                <div class="value">1,250</div>
+                <div class="label">CodeZ Coins <span>💰</span></div>
+            </div>
+            <div class="ach">
+                <div class="icon">🏆</div>
+                <div class="value">8</div>
+                <div class="label">Achievements <span>🏆</span></div>
+            </div>
+            <div class="hr-learn">
+                <div class="icon">⏰</div>
+                <div class="value">48</div>
+                <div class="label">Hours Learned <span>⏰</span></div>
+            </div>
+        </div>
+        <!--------body page buttons------>
+        <div class="dash-button">
+            <div class="btn overview" onclick="activateTab(1)">
+                <span class="icon">🏠</span>
+                <span class="text">Overview</span>
+            </div>
+            <div class="btn course" onclick="activateTab(2)">
+                <span class="icon">📚</span>
+                <span class="text">My Courses</span>
+            </div>
+            <div class="btn" onclick="activateTab(3)">
+                <span class="icon">✅</span>
+                <span class="text">Daily-Tasks</span>
+            </div>
+            <div class="btn achi" onclick="activateTab(4)">
+                <span class="icon">🏆</span>
+                <span class="text">Achievements</span>
+            </div>
+            <div class="btn code" onclick="activateTab(5)">
+                <span class="icon">💰</span>
+                <span class="text">CodeZ Wallet</span>
+            </div>
+        </div>
+        <!--------container for all div------>
+        <div class="content-box">
+            <!--------first div------>
+            <div id="content1" class="show">
+                <h2> 📊 Your Learning Overview</h2>
+                <div class="dashboard">
+                    <div class="progress-section">
+                        <div class="progress-box">
+                            <h3> 📈 Weekly Progress</h3>
+                            <div class="progress-item">
+                                <span>Mon</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%;"></div>
+                                </div>
+                                <div class="progress-time">2h</div>
+                            </div>
+
+                            <div class="progress-item">
+                                <span>Tue</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%;"></div>
+                                </div>
+                                <div class="progress-time">2h</div>
+                            </div>
+
+                            <div class="progress-item">
+                                <span>Wed</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 30%;"></div>
+                                </div>
+                                <div class="progress-time">3h</div>
+                            </div>
+
+                            <div class="progress-item">
+                                <span>Thu</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                                <div class="progress-time">2h</div>
+                            </div>
+
+                            <div class="progress-item">
+                                <span>Fri</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                                <div class="progress-time">2h</div>
+                            </div>
+
+                            <div class="progress-item">
+                                <span>Sat</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%;"></div>
+                                </div>
+                                <div class="progress-time">2h</div>
+                            </div>
+
+                            <div class="progress-item">
+                                <span>Sun</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%;"></div>
+                                </div>
+                                <div class="progress-time">1h</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="actions-section">
+                        <div class="section-title">⚡ Quick Actions</div>
+                        <button class="action-btn continue">🎯 Continue Learning</button>
+                        <button class="action-btn quiz">🧠 Take Quiz</button>
+                        <button class="action-btn mentor">💬 Ask Mentor</button>
+
+                    </div>
+                </div>
+            </div>
+            <!--------second div------>
+            <div id="content2">
+                <div class="courses-container">
+                    <div class="section-title">📚 My Courses</div>
+                    <div class="course-cards">
+                        <div class="course-card card1">
+                            <div class="header">
+                                <img src="https://cdn-icons-png.flaticon.com/512/722/722314.png" alt="web-icon" />
+                                <div>
+                                    <h3>Web Full Stack Development</h3>
+                                    <div class="lessons">29/45 lessons completed</div>
+                                </div>
+                            </div>
+                            <div class="label-per">
+                                <div class="progress-label">Progress</div>
+                                <div class="progress-per">65%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="cr-txt">
+                                <div class="next-topic">Next: <br><strong>Node.js Authentication</strong></div>
+                                <div class="con-btn"><button class="continue-btn">▶️ Continue</button></div>
+                            </div>
+                        </div>
+                        <div class="course-card card2">
+                            <div class="header">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="react-icon" />
+                                <div>
+                                    <h3>React Mastery</h3>
+                                    <div class="lessons">24/30 lessons completed</div>
+                                </div>
+                            </div>
+                            <div class="label-per">
+                                <div class="progress-label">Progress</div>
+                                <div class="progress-per">80%</div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="cr-txt">
+                                <div class="next-topic">Next: <br><strong>Advanced Hooks</strong></div>
+                                <div><button class="continue-btn">▶️ Continue</button></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--------third div------>
+            <div id="content3">
+                <div class="header-div3">
+                    <h2><span class="check">✅</span> Today's Tasks</h2>
+                    <div class="streak-div3">🔥 12 Day Streak!</div>
+                </div>
+
+                <div class="task">
+                    <div class="task-left">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="icon-div3" />
+                        <div class="empty-circle"></div>
+
+                        <div class="task-info">
+                            <h3>Complete React Hooks lesson</h3>
+                            <div class="btn-xp">
+                                <div class="tag easy">Easy</div>
+                                <div class="xp-ease">+25 XP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="start-btn">Start</button>
+                </div>
+
+                <div class="task">
+                    <div class="task-left">
+                        <img src="img/clr-pallete.png" alt="React" class="icon-div3" />
+                        <div class="empty-circle"></div>
+
+                        <div class=" task-info ">
+                            <h3>Submit Portfolio Project</h3>
+                            <div class="btn-xp">
+                                <div class="tag hard">hard</div>
+                                <div class="xp-hard">+100 XP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="start-btn">Start</button>
+                </div>
+
+                <div class="task">
+                    <div class="task-left">
+                        <img src="img/brain.png" alt="React" class="icon-div3" />
+                        <div class="empty-circle"></div>
+
+                        <div class="task-info">
+                            <h3>Take JavaScript Quiz</h3>
+                            <div class="btn-xp">
+                                <div class="tag med">Medium</div>
+                                <div class="xp-med">+50 XP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="start-btn">Start</button>
+                </div>
+                <div class="task">
+                    <div class="task-left">
+                        <img src="img/com.png" alt="React" class="icon-div3" />
+                        <div class="empty-circle"></div>
+
+                        <div class=" task-info ">
+                            <h3>Take JavaScript Quiz</h3>
+                            <div class="btn-xp">
+                                <div class="tag med">Medium
+                                </div>
+                                <div class="xp-med">+75 XP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="start-btn ">Start</button>
+                </div>
+                <div class="goal-container">
+                    <div class="goal-header">
+                        🎯 Today's Goal
+                    </div>
+                    <div class="goal-subtext">Complete 3 tasks to maintain your streak!</div>
+                    <div class="pro-bar">
+                        <div class="progress-goal"></div>
+                    </div>
+                    <div class="progress-text">1/3 tasks completed</div>
+                </div>
+                <br><br>
+            </div>
+            <!--------fourt div------>
+            <div id="content4">
+                <div class="ach-h1">
+                    <h2>🏆 Your Achievements</h2>
+                </div>
+                <div class="container1">
+                    <div class="card-row">
+                        <div class="card">
+                            <div class="badge common">Common</div>
+                            <div class="card-icon">🚀</div>
+                            <h4>First Steps</h4>
+                            <div class="p">Complete your first lesson</div>
+                            <div class="xp">+50 XP</div>
+                            <span class="status ">✨ Unlocked!</span>
+                        </div>
+
+                        <div class="card ">
+                            <div class="badge rare ">Rare</div>
+                            <div class="card-icon"> ⚔ </div>
+                            <h4>Code Warrior</h4>
+                            <div class="p">Write 100 lines of code</div>
+                            <div class="xp">+100 XP</div>
+                            <span class="status ">✨ Unlocked!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2 ">
+                    <div class="card-row ">
+                        <div class="card ">
+                            <div class="badge epic ">Epic</div>
+                            <div class="card-icon">🔥</div>
+                            <h4>Week Streak Master</h4>
+                            <div class="p">Learn for 7 consecutive days</div>
+                            <div class="xp">+200 XP</div>
+                            <span class="status">✨ Unlocked!</span>
+                        </div>
+
+                        <div class="card last">
+                            <div class="badge locked">Locked</div>
+                            <div class="card-icon">🧠</div>
+                            <h4>Quiz Champion</h4>
+                            <div class="p">Score 100% on 5 quizzes</div>
+                            <div class="pro-txt">
+                                <div class="pro">Progress</div>
+                                <div class="duration">3/5</div>
+                            </div>
+                            <div class=" progress-bar4 ">
+                                <div class="progress4 " style="width: 60% "></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------fifth div------>
+            <div id="content5">
+                <div class="wallet-header">
+                    <div class="wal-code"><b>💰 CodeZ Wallet</b></div>
+                    <div class="wal-num">
+                        <b>1,250 CodeZ</b></div>
+                    <div class="wal-txt">Keep learning to earn more coins!</div>
+                </div>
+                <div class="wal-container">
+                    <div class="wal-card earnings">
+                        <div class="h2">
+                            <h2>📈 Recent Earnings</h2>
+                        </div>
+                        <div class="earning-item">
+                            <span>⚛️ Completed React lesson</span>
+                            <span class="points">+25</span>
+                        </div>
+                        <div class="earning-item">
+                            <span>🎨 Submitted project</span>
+                            <span class="points">+100</span>
+                        </div>
+                        <div class="earning-item">
+                            <span>🎁 Daily login bonus</span>
+                            <span class="points">+10</span>
+                        </div>
+                        <div class="earning-item">
+                            <span>🧠 Quiz perfect score</span>
+                            <span class="points">+50</span>
+                        </div>
+                    </div>
+                    <div class="wal-card redeem">
+                        <div class="h2">
+                            <h2>📈 Recent Earnings</h2>
+                        </div>
+                        <div class="redeem-item">
+                            <div>
+                                <strong>📚 50% off new course</strong>
+                                <div class="coin">500 coins</div>
+                            </div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                        <div class="redeem-item">
+                            <div>
+                                <strong>⭐ Premium content access</strong>
+                                <div class="coin">1000 coins</div>
+                            </div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                        <div class="redeem-item">
+                            <div>
+                                <strong>🏆 Fast track certificate</strong>
+                                <div class="coin">300 coins</div>
+                            </div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                        <div class="redeem-item">
+                            <div>
+                                <strong>👨‍🏫 Exclusive mentor session</strong>
+                                <div class="coin">800 coins</div>
+                            </div>
+                            <button class="redeem-btn">Redeem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <script>
+            //function called with index
+            function activateTab(index) {
+                //select all button and div with class and content 
+                const allBtns = document.querySelectorAll('.btn');
+                const contents = document.querySelectorAll('.content-box > div');
+
+                // Remove all active styling
+                allBtns.forEach((btn, i) => {
+                    btn.classList.remove('active1', 'active2', 'active3', 'active4', 'active5');
+                });
+                //hide contents
+                contents.forEach(div => div.classList.remove('show'));
+
+                // Add active class and dispalyed only activ div 
+                allBtns[index - 1].classList.add('active' + index);
+                document.getElementById('content' + index).classList.add('show');
+            }
+        </script>
+</body>
+
+</html
