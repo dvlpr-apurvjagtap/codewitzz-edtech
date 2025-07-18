@@ -11,9 +11,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="styles/navbar.css">
 </head>
 
 <body>
+    <navbar class="navbar">
+        <div class="logo"><img src="assets/icons/logo.png" alt=""></div>
+        <nav class="nav" id="nav">
+            <div class="home-box"> <a href="index.html">🏠 Home</a></div>
+            <a href="course.html">📚 Course</a>
+            <a href="internship.html">💼 Internship</a>
+            <a href="tools.html">🛠 Tools</a>
+            <a href="dashboard.html">📊 Dashbord</a>
+            <a href="" class="coin-box" id="coin-box">🏆 1,250 CodeZ</a>
+            <button class="Sign-in-btn">Sign in</button>
+        </nav>
+    </navbar>
+    <main>
     <div class="Background">
         <div class="left">
             <div id="progress-box">
@@ -332,5 +346,6 @@ const message = `Hello, ${name}!`;
             </div>
         </div>
     </div>
+    </main>
 </body>
 </html>

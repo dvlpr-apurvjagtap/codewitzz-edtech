@@ -3,6 +3,7 @@
 min-height: 100vh;
 background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
 display: flex;
+padding: 58px 0px 0px 0px;
   
 }
 
@@ -11,8 +12,13 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
 }
-
+/* main{
+  padding: 64px 0px 0px 0px;
+  margin: 0px;
+  background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
+} */
 .left{
   width: 20rem;
   background-color: rgba(0, 0, 0, 0.2);
