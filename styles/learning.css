@@ -1,7 +1,7 @@
 
 .Background{
 min-height: 100vh;
-background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
+
 display: flex;
   
 }
@@ -11,6 +11,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
 }
 
 .left{
@@ -580,3 +581,7 @@ padding: 0 2rem 0 2rem;
 .typebox textarea{
   width: 90%;
 }
+
+.lessons {
+    display: none; 
+  }
