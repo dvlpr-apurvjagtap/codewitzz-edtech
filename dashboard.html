@@ -385,28 +385,8 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
-        <script>
-            //function called with index
-            function activateTab(index) {
-                //select all button and div with class and content 
-                const allBtns = document.querySelectorAll('.btn');
-                const contents = document.querySelectorAll('.content-box > div');
-
-                // Remove all active styling
-                allBtns.forEach((btn, i) => {
-                    btn.classList.remove('active1', 'active2', 'active3', 'active4', 'active5');
-                });
-                //hide contents
-                contents.forEach(div => div.classList.remove('show'));
-
-                // Add active class and dispalyed only activ div 
-                allBtns[index - 1].classList.add('active' + index);
-                document.getElementById('content' + index).classList.add('show');
-            }
-        </script>
+        <script src="dashboard.js"></script>
 </body>
 
 </html
