@@ -1,6 +1,3 @@
-
-/* TOOLS CSS  */
-
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +6,11 @@
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     background: linear-gradient(315deg, #111827 0%, #581C87 50%, #111827 100%); /* Background gradient */
 }  
 
-
-
 /* HEADING STYLING  */
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .heading {
     display: flex;
     justify-content: center;
@@ -31,7 +18,7 @@ body {
 }
 
 .container h1 {
-    margin-top: 45px;
+    margin-top: 80px;
     font-size: 48px;
     font-weight: 900;
     background: linear-gradient(to right,#22D3EE,#F472B6);
@@ -47,12 +34,12 @@ body {
 
 #tools-para1 {
     margin-top: 16px;
+    display: flex; justify-self: center;
     line-height: 28px;
     font-size: 18.28px;
     font-weight: 400;
     color: #D1D5DB;
 }
-
 
 .tab-bar {
     display: flex;
@@ -62,35 +49,11 @@ body {
     margin-top: 48px;
 }
 
-#code-icon {
-    width: 27px;
-    height: 30px;
+#tab-icon {
     font-size: 20px;
 }
-
-#cloud-icon {
-    width: 25px;
-    height: 28px;
-    font-size: 20px;
-}
-
-#trophy-icon {
-    width: 25px;
-    height: 28px;
-    font-size: 20px;
-}
-
-#badge-icon {
-    width: 0px;
-    height: 28px;
-    font-size: 20px;
-}
-
-
-
 
 /* CODE PLAYGROUND SECTION  */
-
 .main-containt {
     display: flex;
     justify-content: center;
@@ -129,7 +92,7 @@ h2 span {
     font-weight: 400;
 }
 
-#save-btn {
+#save-btn,#share-btn {
     width: 92px;
     height: 42px;
     padding: 9px 17px;
@@ -144,12 +107,7 @@ h2 span {
     cursor: pointer;
 }
 
-#save-btn:hover {
-    opacity: 0.6;
-    border: white;
-}
-
-#save-btn i{
+#save-btn i,#share-btn i{
     width: 16px;
     height: 16px;
     font-size: 14.25px;
@@ -158,30 +116,14 @@ h2 span {
 
 #share-btn {
     width: 97px;
-    height: 42px;
     margin-left: 12px;
-    padding: 9px 16px;
     border: none;
-    background-color: #523074;
-    backdrop-filter: blur(24px);
-    color: white;
-    border-radius: 12px;
-    font-size: 14.25px;
-    font-weight: 600;
-    line-height: 24px;
-    cursor: pointer;
     background: linear-gradient(to right,#3B82F6,#06B6D4);
 }
 
-#share-btn:hover {
-    opacity: 0.6;
-}
-
-#share-btn i{
-    width: 16px;
-    height: 16px;
-    font-size: 14.25px;
-    margin-right: 8px;
+#save-btn:hover,#share-btn:hover,#run:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.85;
 }
 
 .grid {
@@ -192,18 +134,14 @@ h2 span {
     gap: 15px;
 }
 
-
 .text {
     display: flex;
     justify-content: space-between;
 }
 
 #code-editor {
-    width: 150px;
-    height: 24px;
     color: #fff;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
 }
 
 #language-select {
@@ -248,10 +186,6 @@ option {
     cursor: pointer;
 }
 
-#run:hover {
-    opacity: 0.6;
-}
-
 #output-heading {
     width: 200px;
     height: 24px;
@@ -276,18 +210,6 @@ option {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-#node{
-    color: #4ADE80;
-}
-
-#hello {
-    color: #22D3EE;
-}
-
-#program {
-    color: #6B7280;
-}
-
 .test-case {
     width: 563px;
     height: 270px;
@@ -300,14 +222,7 @@ option {
     border: 1px solid #FFFFFF33;
 }
 
-.test-case-fail {
-    color: #F87171;
-    font-size: 12.47px;
-    font-weight: 700;
-}
-
-.test-case-pass {
-    color: #4ADE80;
+.test-case-fail,.test-case-pass {
     font-size: 12.47px;
     font-weight: 700;
 }
@@ -329,13 +244,7 @@ option {
     transform: scale(1.08);
 }
 
-
-
-
-
 /* CLOUD LAB SECTION  */
-
-
 .cloud-lab-environment{
     display: flex;
     justify-content: center;
@@ -349,11 +258,10 @@ option {
     padding: 17px 33px 33px;
     width: 1216px;
     height: 750px;
-    margin-top: 30px;
+    margin: 30px 0px 20px 0px;
     border: 1px solid #FFFFFF33;
     border-radius: 24px;
     background: linear-gradient(315deg, #0f172a,#581c87,#0f172a);
-    margin-bottom: 20px;
 }
 
 #cloud-lab-heading{
@@ -367,7 +275,6 @@ option {
     margin-top: 20px;
     font-weight: 700;
     line-height: 20px;
-    font-family: Inter;
     border: 1px solid #FFFFFF33;
     background: linear-gradient(to right,#a855f7,#ec4899);
     backdrop-filter: blur(24px);
@@ -392,42 +299,11 @@ option {
     line-height: 18px;
 }
 
-#command-line {
-    color: #20c4dd;
+#command-line,#welcome,#cmd,#node,#python,#folders {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-
-#welcome {
-    line-height: 20px;
-    color: #4ADE80;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-#cmd {
-    color: #9197A3;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-#node {
-    color: #4ADE80;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-#python {
-    color: #FBBF24;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-#folders {
-    color: #fff;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-
-
 
 /* CURSOR BLINKING ANIMATION  */
-
 #cursor {
     animation: blink-cursor 2s infinite alternate ease-in-out;
 }
@@ -447,63 +323,26 @@ option {
     }
   }
   
-
 .short-note {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 24px;
-    font-family: sans-serif;
 }
 
-.commands {
+.commands,.tools,.storage {
     width: 367px;
     height: 188px;
     border: 1px solid #FFFFFF33;
     color: white;
     padding: 24px;
-    border-radius: 20px;
-    line-height: 23px;
-    background: #3e3082;
-    backdrop-filter: blur(24px);
-    transition: all 0.3s ease;
-}
-
-.commands p{
-    font-family: sans-serif;
-}
-
-.tools {
-    width: 367px;
-    height: 188px;
-    background-color: #32375d;
-    backdrop-filter: blur(24px);
-    border: 1px solid #FFFFFF33;
-    color: white;
-    padding: 24px;
-    border-radius: 20px;
     line-height: 23px;
     transition: all 0.3s ease;
-    font-family: sans-serif;
-}
-
-.storage {
-    width: 367px;
-    height: 188px;
-    background-color: #452060;
-    backdrop-filter: blur(24px);
-    border: 1px solid #FFFFFF33;
-    color: white;
-    padding: 24px;
     border-radius: 20px;
-    line-height: 23px;
-    transition: all 0.3s ease;
-    font-family: sans-serif;
+    backdrop-filter: blur(24px);
 }
 
-.commands:hover,
-.tools:hover,
-.storage:hover {
+.commands:hover,.tools:hover,.storage:hover{
     transform: scale(1.05);
 }
 
@@ -511,29 +350,15 @@ option {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 14px;
     font-weight: 400;
+    margin-top: 13px;
 }
-
-.short-note h3 {
-    padding-bottom: 13px;
-}
-
-
-
 
 /* TAB PANE LOGIC  */
-
-input[type="radio"] {
-    display: none;
-}
-
-label  {
+#code-tab,#cloud-tab,#leaderboard,#Badge-gallary {
     width: 208.99px;
     height: 56.47px;
     font-size: 14.33px;
-    padding-top: 12.82px;
-    padding-bottom: 13.65px;
-    padding-left: 25.2px;
-    padding-right: 25.19px;
+    padding: 12.82px 25.19px 13.65px 25.2px;
     border-radius: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -546,87 +371,45 @@ label  {
     transform: scale(1);
 }
 
-#code-tab {
-    width: 208.99px;
-    height: 56.47px;
-    font-size: 14.33px;
+#code-tab:hover,#cloud-tab:hover,#leaderboard:hover,#Badge-gallary:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.85;
 }
 
-#cloud-tab {
-    width: 153px;
-    height: 54px;
-    font-size: 13.54px;
-}
-
-#leaderboard {
-    width: 170px;
-    height: 54px;
-    font-size: 13.44px;
-}
-
-#Badge-gallary {
-    width: 175.45px;
-    height: 54px;
-    font-size: 13.45px;
-}
-
-
-
-
-
-/* TABPANE STYLING  */
-
-.tab-content {
+.content {
     display: none;
-    margin: 24px;
 }
 
-#tab1:checked~#content1,
-#tab2:checked~#content2,
-#tab3:checked~#content3,
-#tab4:checked~#content4
-{
+#content1{
     display: block;
 }
 
-.tools-section:has(#tab1:checked) label[for="tab1"]
-{
-  background: linear-gradient(to right,#3B82F6,#06B6D4);
-  color: white;
-}
+.tab-bar button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
 
-.tools-section:has(#tab2:checked) label[for="tab2"]
-{
-  background: linear-gradient(to right,#a855f7,#ec4899);
-  color: white;
-}
+  .tab-bar #code-tab.active-tab {
+    background: linear-gradient(to right,#3B82F6,#06B6D4);
+  }
+  
+  .tab-bar #cloud-tab.active-tab {
+    background: linear-gradient(to right,#a855f7,#ec4899);
+  }
 
-.tools-section:has(#tab3:checked) label[for="tab3"]
-{
-  background: linear-gradient(to right,#eab308,#f97316);
-  color: white;
-}
+  .tab-bar #leaderboard.active-tab {
+    background: linear-gradient(to right,#eab308,#f97316);
+  }
 
-.tools-section:has(#tab4:checked) label[for="tab4"]
-{
-  background: linear-gradient(to right,#22c55e,#10b981);
-  color: white;
-} 
-
-.tools-section:has(#tab1:checked) label[for="tab1"],
-.tools-section:has(#tab2:checked) label[for="tab2"],
-.tools-section:has(#tab3:checked) label[for="tab3"],
-.tools-section:has(#tab4:checked) label[for="tab4"] {
-  transform: scale(1.08);
-  z-index: 2;
-}
-
-
-
-
+  .tab-bar #Badge-gallary.active-tab {
+    background: linear-gradient(to right,#22c55e,#10b981);
+  }
 
 /* LEADERBOARD SECTION  */
-
 .leaderboard-main {
     display: flex;
     justify-content: center;
@@ -665,7 +448,7 @@ label  {
     border-radius: 16px;
 }
 
-.first-winner {
+.first-winner,.second-winner,.third-winner {
     width: 1160px;
     height: 95px;
     display: flex;
@@ -676,18 +459,36 @@ label  {
     border-radius: 15px;
     padding: 15px;
     margin-top: 15px;
+    transition: transform 0.3s ease; 
 }
 
-.rank {
+.first-winner:hover,
+.second-winner:hover,
+.third-winner:hover
+ {
+  transform: scale(1.05); 
+  z-index: 10;
+}
+
+.second-winner {
+    background: linear-gradient(to right,#402958,#3A2950);
+    border: 1px solid #625473;
+}
+
+.third-winner {
+    background: linear-gradient(to right,#343579,#491E4F);
+    border: 1px solid #2B84B4;
+}
+
+.rank,.second-rank,.third-rank,.fourth-rank{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    color: black;
-    background: linear-gradient(to right,#eab308,#f97316);
     text-align: center;
     padding: 9.5px;
     font-weight: 700;
     font-size: 20px;
+    backdrop-filter: blur(24px);
 }
 
 .first-left {
@@ -704,7 +505,7 @@ label  {
     object-fit: cover;
 }
 
-.legend {
+.legend,.second-legend,.third-legend,.fourth-legend {
     width: 140px;
     height: 30px;
     font-size: 15px;
@@ -713,6 +514,18 @@ label  {
     border-radius: 20px;
     font-weight: 700;
     text-align: center;
+}
+
+.second-legend {
+    background: linear-gradient(to right,#ec4899 ,#a855f7 );
+}
+
+.third-legend {
+    background: linear-gradient(to right,#06b6d4 ,#3b82f6 );
+}
+
+.fourth-legend {
+    background: linear-gradient(to right,#10b981 ,#22c55e );
 }
 
 #gold-medal {
@@ -734,105 +547,6 @@ label  {
     font-weight: 500;
 }
 
-.second-rank {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    color: black;
-    background: linear-gradient(to right,#C5CAD1,#717785);
-    text-align: center;
-    padding: 9.5px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.third-rank {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    color: white;
-    background: linear-gradient(to right,#fb923c ,#ef4444 );
-    backdrop-filter: blur(24px);
-    text-align: center;
-    padding: 9.5px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.second-winner {
-    width: 1160px;
-    height: 95px;
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to right,#402958,#3A2950);
-    border: 1px solid #625473;
-    border-radius: 15px;
-    padding: 15px;
-    margin-top: 15px;
-}
-
-.third-winner {
-    width: 1160px;
-    height: 95px;
-    display: flex;
-    justify-content: space-between;
-    background: linear-gradient(to right,#343579,#491E4F);
-    backdrop-filter: blur(24px);
-    border: 1px solid #2B84B4;
-    border-radius: 15px;
-    padding: 15px;
-    margin-top: 15px;
-}
-
-.fourth-rank {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    color: white;
-    background: linear-gradient(to right,#3b82f6,#a855f7 );
-    text-align: center;
-    padding: 9.5px;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.second-legend {
-    width: 140px;
-    height: 30px;
-    font-size: 15px;
-    padding: 4.5px;
-    background: linear-gradient(to right,#ec4899 ,#a855f7 );
-    border-radius: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-}
-
-.third-legend {
-    width: 140px;
-    height: 30px;
-    font-size: 15px;
-    padding: 4.5px;
-    background: linear-gradient(to right,#06b6d4  ,#3b82f6 );
-    border-radius: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-}
-
-.fourth-legend {
-    width: 140px;
-    height: 30px;
-    font-size: 15px;
-    padding: 4.5px;
-    background: linear-gradient(to right,#10b981   ,#22c55e   );
-    border-radius: 20px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    margin-top: 15px;
-}
-
 .leaderboard-footer {
     width: 1160px;
     height: 120px;
@@ -851,6 +565,7 @@ label  {
     width: 190px;
     height: 42px;
     padding: 9px 17px;
+    margin: 15px 0;
     background: linear-gradient(to right,#06b6d4 ,#ec4899 );
     color: white;
     border-radius: 12px;
@@ -858,7 +573,6 @@ label  {
     font-weight: 600;
     line-height: 24px;
     cursor: pointer;
-    margin-top: 15px;
     border: none;
     transition: transform 0.5s ease; 
 }
@@ -876,28 +590,7 @@ label  {
     transform: rotate(30deg);
 }
 
-.first-winner,
-.second-winner,
-.third-winner
- {
-  transition: transform 0.3s ease; 
-}
-
-.first-winner:hover,
-.second-winner:hover,
-.third-winner:hover
- {
-  transform: scale(1.05); 
-  z-index: 10;
-}
-
-
-
-
-
-
 /* BADGE GALLARY SECTION  */
-
 .badge-gallary-environment {
     display: flex;
     justify-content: center;
@@ -948,6 +641,7 @@ label  {
     overflow: visible;
     z-index: 1;
     position: relative;
+    transition: transform 0.3s ease; 
 }
 
 .common {
@@ -962,10 +656,7 @@ label  {
     filter: drop-shadow(0 2px 6px #5A2A89) drop-shadow(0 40px 50px #5A2A89);
 }
 
-
-
 /* STAR BLINKING ANIMATION  */
-
 #sparkle-icon {
     font-size: 28px;
     color: #facc15;
@@ -989,7 +680,6 @@ label  {
     }
   }
   
-
  .badge-div-icon {
     position: absolute;
     top: 28px;
@@ -1003,49 +693,33 @@ label  {
     justify-self: center;
 } 
 
-.common-badge {
+.common-badge,.rare-badge,.epic-badge {
     width: 75px;
     height: 24px;
     font-size: 12px;
     padding: 4px 12px;
-    color: white;
+    font-weight: 700;
     border-radius: 20px;
-    background-color: #4F4066;
     text-align: center;
     position: absolute;
     top: 120px;
+    left: 150px;
+}
+
+.common-badge {
+    color: white;
+    background-color: #4F4066;
     left: 147px;
-    font-weight: 700;
 }
 
 .rare-badge {
-    width: 75px;
-    height: 24px;
-    font-size: 12px;
-    padding: 4px 12px;
     color: #60A5FA;
-    border-radius: 20px;
     background-color: #4E4487;
-    text-align: center;
-    position: absolute;
-    top: 120px;
-    left: 150px;
-    font-weight: 700;
 }
 
 .epic-badge {
-    width: 75px;
-    height: 24px;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 4px 12px;
     color: #C084FC;
-    border-radius: 20px;
     background-color: #653B88;
-    text-align: center;
-    position: absolute;
-    top: 120px;
-    left: 150px;
 }
 
 #badge-title {
@@ -1058,28 +732,9 @@ label  {
     text-align: center;
 }
 
-#badge-description-common {
+#badge-description-common,#badge-description-rare,#badge-description-epic {
     position: absolute;
     top: 188px;
-    left: 105px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-}
-
-#badge-description-rare {
-    position: absolute;
-    top: 188px;
-    left: 128px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-}
-
-#badge-description-epic {
-    position: absolute;
-    top: 188px;
-    left: 110px;
     font-size: 14px;
     color: white;
     text-align: center;
@@ -1099,13 +754,6 @@ label  {
     text-align: center;
 }
 
-.rare #unlocked {
-    left: 135px;
-}
-
-.epic #unlocked {
-    left: 137px;
-}
 
 .quiz,.project,.mentor {
     width: 380px;
@@ -1116,6 +764,7 @@ label  {
     border-radius: 16px;
     padding: 20px;
     overflow: visible;
+    transition: transform 0.3s ease; 
 }
 
 .badge-div-icon-bottom {
@@ -1131,91 +780,48 @@ label  {
     justify-self: center;
 }
 
-.Legendary-badge {
-    width: 80px;
+.Legendary-badge,.epic1-badge,.Mythic-badge {
     height: 24px;
     font-size: 12px;
     padding: 4px 12px;
-    color: #facc15;
+    font-weight: 700;
     border-radius: 20px;
-    background-color: #4F4066;
     text-align: center;
     position: absolute;
     top: 120px;
+}
+
+.Legendary-badge {
+    width: 80px;
+    color: #facc15;
+    background-color: #4F4066;
     left: 147px;
-    font-weight: 700;
 }
 
 .epic1-badge {
     width: 75px;
-    height: 24px;
-    font-size: 12px;
-    padding: 4px 12px;
     color: #C084FC;
-    border-radius: 20px;
     background-color: #653B88;
-    text-align: center;
-    position: absolute;
-    top: 120px;
     left: 155px;
-    font-weight: 700;
 }
 
 .Mythic-badge {
     width: 75px;
-    height: 24px;
-    font-size: 12px;
-    padding: 4px 12px;
     color: #22d3ee;
-    border-radius: 20px;
     background-color: #292C59;
-    text-align: center;
-    position: absolute;
-    top: 120px;
     left: 155px;
-    font-weight: 700;
 }
 
-#badge-description-quiz {
+#badge-description-quiz,#badge-description-project,#badge-description-epic1,#badge-description-mentor {
     position: absolute;
     top: 188px;
-    left: 125px;
     font-size: 14px;
     color: white;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 }
 
-#badge-description-epic1 {
-    position: absolute;
-    top: 188px;
-    left: 133px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-#badge-description-mentor {
-    position: absolute;
-    top: 188px;
-    left: 130px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.quiz #badge-title {
-    left: 133px;
-    color: #ABA0B7;
-}
-
-.project #badge-title {
-    color: #ABA0B7;
-}
-
-.mentor #badge-title {
+.quiz #badge-title,.project #badge-title,.mentor #badge-title {
     color: #ABA0B7;
 }
 
@@ -1272,29 +878,7 @@ label  {
     justify-content: space-around;
   }
 
-  #unlocked-badge {
-    color:#22D3EE;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-  }
-
-  #totalxp {
-    color: #FACC15;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-  }
-
-  #global {
-    color:#F472B6;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 900;
-  }
-
-  #day-streak {
-    color: #4ADE80;
+  #unlocked-badge,#totalxp,#global,#day-streak {
     text-align: center;
     font-size: 30px;
     font-weight: 900;
@@ -1305,17 +889,6 @@ label  {
     font-size: 16px;
     font-weight: 400;
   }
-
-
-.common,
-.rare,
-.epic,
-.quiz,
-.project,
-.epic1,
-.mentor {
-  transition: transform 0.3s ease; 
-}
 
 .common:hover,
 .rare:hover,

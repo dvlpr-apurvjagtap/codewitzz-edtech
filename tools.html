@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,54 +11,32 @@
     <title>Tools Section</title>
 </head>
 <body>
-    <section class="tools-section">
-        <!-- RADIO BUTTONS FOR TABS  -->
-        <input type="radio" name="tabs" id="tab1" checked />
-        <input type="radio" name="tabs" id="tab2" />
-        <input type="radio" name="tabs" id="tab3" />
-        <input type="radio" name="tabs" id="tab4" /> 
         <!-- MAIN CONTAINER  -->
         <div class="container">
           <div class="heading">
-            <!-- HEADING -->
-            <h1>Learning Tools</h1>
-            <span>🛠️</span>
+            <h1>Learning Tools</h1><span>🛠️</span>
           </div>
           <p id="tools-para1">Practice, compete, and showcase your skills</p>
-          <!-- PARAGRAPH1 -->
         </div>
   
         <!-- TAB SECTION -->
         <div class="tab-bar">
-          <label for="tab1" id="code-tab"
-            ><span id="code-icon">💻</span> Code Playground</label
-          >
-          <label for="tab2" id="cloud-tab"
-            ><span id="cloud-icon">☁️</span> Cloud Lab</label
-          >
-          <label for="tab3" id="leaderboard"
-           ><span id="trophy-icon">🏆</span> Leaderboard</label
-          >
-          <label for="tab4" id="Badge-gallary"
-           ><span id="cloud-icon">🎖️</span> Badge Gallery</label
-          >
+            <button onclick="showContent('content1', this)" id="code-tab" class="active-tab"><span id="tab-icon">💻</span>Code Playground</button>
+            <button onclick="showContent('content2', this)" id="cloud-tab"><span id="tab-icon">☁️</span>Cloud Lab</button>
+            <button onclick="showContent('content3', this)" id="leaderboard"><span id="tab-icon">🏆</span>Leaderboard</button>
+            <button onclick="showContent('content4', this)" id="Badge-gallary"><span id="tab-icon">🎖️</span>Badge Gallery</button>
         </div>
   
          <!-- CODE PLAYGROUND SECTION  -->
-
-        <div class="tab-content" id="content1">
+         <div id="content1" class="content">
           <div class="code-playground-section">
             <div class="main-containt">
               <div class="containt">
                 <div class="code-heading">
                   <h2 id="code-text"><span>💻 </span>Code Playground</h2>
                   <div class="btns">
-                    <button id="save-btn">
-                      <i class="ri-save-line"></i>Save
-                    </button>
-                    <button id="share-btn">
-                      <i class="ri-share-2-line"></i>Share
-                    </button>
+                    <button id="save-btn"><i class="ri-save-line"></i>Save</button>
+                    <button id="share-btn"><i class="ri-share-2-line"></i>Share</button>
                   </div>
                 </div>
   
@@ -86,18 +63,16 @@
                       >
                     </div>
   
-                    <button id="run">
-                      <i class="ri-play-large-line"></i> Run Code
-                    </button>
+                    <button id="run"><i class="ri-play-large-line"></i> Run Code</button>
                   </div>
   
                   <!-- OUTPUT SCREEN  -->
                   <div class="output">
                     <h4 id="output-heading"><span>📊 </span>Output & Results</h4>
                     <div class="result">
-                      <span id="node">node playground.js</span> <br />
-                      <span id="hello">Hello, World!</span> <br /><br />
-                      <span id="program">✅ Program executed successfully</span>
+                      <span id="node" style=" color: #4ADE80;">node playground.js</span> <br />
+                      <span id="hello" style="color: #22D3EE;">Hello, World!</span> <br /><br />
+                      <span id="program" style="color: #6B7280;">✅ Program executed successfully</span>
                     </div>
   
                     <!-- TEST CASE SCREEN  -->
@@ -105,17 +80,15 @@
                       <h4 id="test-case-heading"><span>🧪 </span>Test Cases</h4>
                       <div class="test-case-item">
                         <span class="test-case-name">greet("Alice")</span>
-                        <span class="test-case-pass">✅ passed</span>
+                        <span class="test-case-pass" style=" color: #4ADE80;">✅ passed</span>
                       </div>
-  
                       <div class="test-case-item">
                         <span class="test-case-name">greet("Bob")</span>
-                        <span class="test-case-pass">✅ passed</span>
+                        <span class="test-case-pass" style=" color: #4ADE80;">✅ passed</span>
                       </div>
-  
                       <div class="test-case-item">
                         <span class="test-case-name">greet("")</span>
-                        <span class="test-case-fail">❌ failed</span>
+                        <span class="test-case-fail" style=" color: #F87171;">❌ failed</span>
                       </div>
                     </div>
                   </div>
@@ -125,11 +98,8 @@
           </div>
         </div>
 
-
-
         <!-- CLOUD LAB SECTION  -->
-  
-        <div class="tab-content" id="content2">
+        <div id="content2" class="content">
           <section class="cloud-lab-section">
             <div class="cloud-lab-environment">
               <div class="cloud-environment">
@@ -137,22 +107,20 @@
                   <span>☁️ </span>Cloud Lab Environment
                 </h2>
                 <button id="configure-btn">Configure</button>
-  
                 <!-- CLOUD CONSOLE  -->
                 <div class="console">
-                  <p id="command-line">codewitzz@cloudlab:~$</p> <br/>
-                  <p id="welcome">Welcome to Codewitzz Cloud Lab! 🚀</p>
-                  <p id="cmd">Linux Ubuntu 20.04 LTS</p><br>
-                  <p id="node">✅ Node.js v18.0.0 installed<br></p> 
-                  <p id="python">✅ Python 3.9.0 installed</p><br>
-                  <p id="command-line"> codewitzz@cloudlab:~$ ls</p><br>
-                  <p id="folders">📁 projects/ 📁 assignments/ 📁 resources/<br></p><br>
-                  <p id="command-line">codewitzz@cloudlab:~$  <span id="cursor">|</span></p>
+                  <p id="command-line" style="color: #20c4dd;">codewitzz@cloudlab:~$</p> <br/>
+                  <p id="welcome" style=" color: #4ADE80; line-height: 20px;">Welcome to Codewitzz Cloud Lab! 🚀</p>
+                  <p id="cmd" style="color: #9197A3;">Linux Ubuntu 20.04 LTS</p><br>
+                  <p id="node" style="color: #4ADE80;">✅ Node.js v18.0.0 installed<br></p> 
+                  <p id="python" style="color:#FBBF24;">✅ Python 3.9.0 installed</p><br>
+                  <p id="command-line" style="color: #20c4dd;"> codewitzz@cloudlab:~$ ls</p><br>
+                  <p id="folders" style="color:#ffff;">📁 projects/ 📁 assignments/ 📁 resources/<br></p><br>
+                  <p id="command-line" style="color: #20c4dd;">codewitzz@cloudlab:~$  <span id="cursor">|</span></p>
                 </div>
-  
                 <!-- COMMANDS  -->
                 <div class="short-note">
-                  <div class="commands">
+                  <div class="commands" style="background: #3e3082;">
                     <h3><span>⚡ </span>Quick Commands</h3>
                     <p>
                       ls - list files<br/>
@@ -161,9 +129,8 @@
                       npm install - install packages
                     </p>
                   </div>
-  
                   <!-- PREINSTALLED TOOLS  -->
-                  <div class="tools">
+                  <div class="tools" style=" background-color: #32375d;">
                     <h3><span>🛠️ </span> Pre-installed Tools</h3>
                     <p>
                       ✅ Node.js & npm<br />
@@ -172,9 +139,8 @@
                       ✅ VS Code Server
                     </p>
                   </div>
-  
                   <!-- STORAGE RESOURCES  -->
-                  <div class="storage">
+                  <div class="storage" style=" background-color: #452060;">
                     <h3><span>💾 </span>Storage</h3>
                     <p>
                       Free: 5GB<br />
@@ -188,12 +154,8 @@
           </section>
         </div>
  
-
-
-
        <!-- LEADERBOARD SECTION  -->
-
-        <div class="tab-content" id="content3">
+       <div id="content3" class="content">
           <section class="leader-board-section">
             <div class="leaderboard-main">
               <div class="leaderboard-section">
@@ -210,25 +172,23 @@
                 <!-- FIRST THREE SECTIONS  -->
                   <div class="first-winner">
                     <div class="first-left">
-                      <div class="rank">1</div><i class="ri-vip-crown-line" style="color: gold;" id="crown"></i>
+                      <div class="rank" style="color: black;  background: linear-gradient(to right,#eab308,#f97316);">1</div>
+                      <i class="ri-vip-crown-line" style="color: gold;" id="crown"></i>
                       <img src="images\profile-pic1.webp" id="winner">
                       <h3 id="winner-name">Priya Sharma<br><span id="winner-XP">15,420 XP</span></h3>
                     </div>
-
                     <div class="first-right">
                       <div class="legend">Coding Legend</div>
                       <i class="fas fa-medal" style="color: gold;" id="gold-medal"></i>
                     </div>
                   </div>
 
-
                   <div class="first-winner">
                     <div class="first-left">
-                      <div class="second-rank">2</div>
+                      <div class="second-rank" style="color: black; background: linear-gradient(to right,#C5CAD1,#717785);">2</div>
                       <img src="images\profile-pic2.webp" id="winner">
                       <h3 id="winner-name">Rahul Gupta<br><span id="winner-XP">14,850 XP</span></h3>
                     </div>
-
                     <div class="first-right">
                       <div class="second-legend">Code Master</div>
                       <i class="fas fa-medal" style="color: #9ca3af;" id="gold-medal"></i>
@@ -237,11 +197,10 @@
 
                   <div class="first-winner">
                     <div class="first-left">
-                      <div class="third-rank">3</div>
+                      <div class="third-rank" style=" color: white;  background: linear-gradient(to right,#fb923c ,#ef4444 );">3</div>
                       <img src="images\profile-pic1.webp" id="winner">
                       <h3 id="winner-name">Sneha Patel<br><span id="winner-XP">13,990 XP</span></h3>
                     </div>
-
                     <div class="first-right">
                       <div class="third-legend">Tech Wizard</div>
                       <i class="fas fa-medal" style="color: #f97316;" id="gold-medal"></i>
@@ -251,40 +210,36 @@
                   <!-- SECOND FOUR SECTIONS  -->
                   <div class="second-winner">
                     <div class="first-left">
-                      <div class="fourth-rank">4</div>
+                      <div class="fourth-rank" style=" color: white; background: linear-gradient(to right,#3b82f6,#a855f7 );">4</div>
                       <img src="images\profile-pic2.webp" id="winner">
                       <h3 id="winner-name">Arjun Singh<br><span id="winner-XP">11,200 XP</span></h3>
                     </div>
-
                     <div class="first-right">
-                      <div class="fourth-legend">Rising Star</div>
+                      <div class="fourth-legend" style="margin-top: 15px;">Rising Star</div>
                     </div>
                   </div>
 
                   <div class="second-winner">
                     <div class="first-left">
-                      <div class="fourth-rank">5</div>
+                      <div class="fourth-rank" style=" color: white; background: linear-gradient(to right,#3b82f6,#a855f7 );">5</div>
                       <img src="images\profile-pic1.webp" id="winner">
                       <h3 id="winner-name">Kavya Reddy<br><span id="winner-XP">15,420 XP</span></h3>
                     </div>
-
                     <div class="first-right">
-                      <div class="fourth-legend">Code Ninja</div>
+                      <div class="fourth-legend" style="margin-top: 15px;">Code Ninja</div>
                     </div>
                   </div>
 
                   <div class="third-winner">
                     <div class="first-left">
-                      <div class="fourth-rank">15</div>
+                      <div class="fourth-rank" style=" color: white; background: linear-gradient(to right,#3b82f6,#a855f7 );">15</div>
                       <img src="images\profile-pic1.webp" id="winner">
                       <h3 id="winner-name">You 👈You!<br><span id="winner-XP">8,420 XP</span></h3>
                     </div>
-
                     <div class="first-right">
-                      <div class="fourth-legend">Future Dev</div>
+                      <div class="fourth-legend" style="margin-top: 15px;">Future Dev</div>
                     </div>
                   </div>
-
                   <!-- LEADERBOARD BOTTOM SECTION  -->
                 <div class="leaderboard-footer"> 
                   <p>🚀 Keep learning to climb the leaderboard!</p>
@@ -294,55 +249,46 @@
           </section>
         </div>
 
-
-
-  
-
         <!-- BADGE GALLERY SECTION  -->
-
-        <div class="tab-content" id="content4">
+        <div id="content4" class="content">
           <section class="badge-gallary-section">
             <div class="badge-gallary-environment">
               <div class="badge-gallary-container">
                 <h1>🎖️ Badge Gallery</h1>
                 <div class="grid-gallary">
-
                   <!-- COMMON BADGE  -->
                   <div class="common">
                     <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon"></iconify-icon>
                     <div class="badge-div-icon">🚀</div>
                     <div class="common-badge">Common</div>
                     <h1 id="badge-title">First Step</h1>
-                    <p id="badge-description-common">Complete your first lesson</p> 
+                    <p id="badge-description-common" style=" left: 105px;">Complete your first lesson</p> 
                     <h3 id="unlocked"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
                   </div>
-
                   <!-- RARE BADGE  -->
                   <div class="rare">
                     <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon"></iconify-icon>
                     <div class="badge-div-icon">⚔️</div>
                     <div class="rare-badge">Rare</div>
                     <h1 id="badge-title">Code Warrior</h1>
-                    <p id="badge-description-rare">Write 100 lines of code</p> 
-                    <h3 id="unlocked"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
+                    <p id="badge-description-rare" style="left: 128px;">Write 100 lines of code</p> 
+                    <h3 id="unlocked" style="left: 135px;"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
                   </div>
-
                   <!-- EPIC BADGE  -->
                   <div class="epic">
                     <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon"></iconify-icon>
                     <div class="badge-div-icon">🔥</div>
                     <div class="epic-badge">Epic</div>
                     <h1 id="badge-title">Streak Master</h1>
-                    <p id="badge-description-epic">Learn for 7 consecutive days</p> 
-                    <h3 id="unlocked"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
+                    <p id="badge-description-epic" style="left: 110px;">Learn for 7 consecutive days</p> 
+                    <h3 id="unlocked" style="left: 137px;"> <iconify-icon icon="material-symbols:auto-awesome" id="sparkle-icon-unlock"></iconify-icon> Unlocked!</h3>
                   </div>
-
                   <!-- QUIZ BADGE  -->
                   <div class="quiz">
                     <div class="badge-div-icon-bottom">🧠</div>
                     <div class="Legendary-badge">Legendary</div>
-                    <h1 id="badge-title">Quiz Champion</h1>
-                    <p id="badge-description-quiz">Score 100% on 5 quizzes</p> 
+                    <h1 id="badge-title" style="left: 133px;">Quiz Champion</h1>
+                    <p id="badge-description-quiz" style="left: 125px;">Score 100% on 5 quizzes</p> 
 
                     <div class="progress-wrapper">
                       <div class="progress-labels">
@@ -354,13 +300,12 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- PROJECT BADGE  -->
                   <div class="project">
                     <div class="badge-div-icon-bottom">🎨</div>
                     <div class="epic1-badge">Epic</div>
                     <h1 id="badge-title">Project Master</h1>
-                    <p id="badge-description-epic1">Complete 10 projects</p> 
+                    <p id="badge-description-epic1" style="left: 133px;">Complete 10 projects</p> 
 
                     <div class="progress-wrapper">
                       <div class="progress-labels">
@@ -372,13 +317,12 @@
                       </div>
                     </div>
                   </div>
-
                   <!-- MENTOR BADGE  -->
                   <div class="mentor">
                     <div class="badge-div-icon-bottom">👨‍🏫</div>
                     <div class="Mythic-badge">Mythic</div>
                     <h1 id="badge-title">Mentor Helper</h1>
-                    <p id="badge-description-mentor">Help 20 fellow students</p>
+                    <p id="badge-description-mentor" style=" left: 130px;">Help 20 fellow students</p>
                     
                     <div class="progress-wrapper">
                       <div class="progress-labels">
@@ -391,21 +335,20 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- STATE BADGE  -->
                 <div class="Stats">
                   <div class="stat-title"> <h2><span>🏆 </span>Your Badge Stats</h2></div>
                   <div class="badge-stat">
-                    <h1 id="unlocked-badge">3<br><span>Unlocked</span></h1>
-                    <h1 id="totalxp">8,420<br><span>Total XP</span></h1>
-                    <h1 id="global">15<br><span>Global Rank</span></h1>
-                    <h1 id="day-streak">12<br><span>Day Streak</span></h1>
+                    <h1 id="unlocked-badge" style=" color:#22D3EE;">3<br><span>Unlocked</span></h1>
+                    <h1 id="totalxp" style=" color: #FACC15;">8,420<br><span>Total XP</span></h1>
+                    <h1 id="global" style="color:#F472B6;">15<br><span>Global Rank</span></h1>
+                    <h1 id="day-streak" style="color: #4ADE80;">12<br><span>Day Streak</span></h1>
                   </div>
                 </div>
               </div>
             </div>
           </section>
         </div>
-    </section>
+    <script src="tools.js"></script>
 </body>
 </html>
