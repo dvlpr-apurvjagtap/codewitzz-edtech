@@ -1,9 +1,8 @@
 
 .Background{
 min-height: 100vh;
-
 display: flex;
-  
+padding: 58px 0px 0px 0px;
 }
 
 body{
@@ -12,6 +11,7 @@ body{
   flex-direction: column;
   justify-content: center;
   background-image: linear-gradient(to bottom right, #0f172a, #6b21a8, #0f172a);
+  margin:  0%;
 }
 
 .left{
@@ -131,10 +131,11 @@ gap: 0.5rem;
 }
 
 .course{
+  margin: 5px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 0.3rem;
+padding: 0.3rem 1rem;
 border-radius: 0.75rem;
 border: 1px solid transparent;
 }
@@ -142,6 +143,7 @@ border: 1px solid transparent;
 .course:hover{
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
+   margin: 5px;
 }
 
 .log{

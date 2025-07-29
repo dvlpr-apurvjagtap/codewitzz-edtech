@@ -43,7 +43,7 @@ buttons.forEach(btn => btn.addEventListener('click', () => {
 
   const dropdown = document.getElementById("dropdown");
 
-  dropdown.innerHTML = data.map((section, index) => {
+  dropdown.innerHTML = data.map((section) => {
     const lessonsHTML = section.lessons.map(lesson => `
       <div class="course">
         <div class="log"><img src="/assets/icons/${lesson.icon}.png" alt=""></div>
