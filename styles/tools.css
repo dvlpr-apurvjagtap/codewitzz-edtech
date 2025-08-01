@@ -897,6 +897,7 @@ option {
 .project:hover,
 .epic1:hover,
 .mentor:hover {
+
   transform: scale(1.05); 
   z-index: 10;
 }
