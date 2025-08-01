@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course-Section</title>
+    <link rel="stylesheet" href="styles/course.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/icons/logo.png"
+                    alt="logo">
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">🏡 Home</a>
+                <a href="#" class="nav-link">📚 Course</a>
+                <a href="#" class="nav-link">💼 Internship</a>
+                <a href="#" class="nav-link">🔨 Tools</a>
+                <a href="#" class="nav-link">📊 Dashboard</a>
+                <a href="#" class="nav-link codez">🏆 1,250 CodeZ</a>
+                <a href="#" class="nav-link sign-in">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-left">
+                <div class="popular-badge">
+                    <img src="assets/icons/star.png"
+                        alt="star">
+                    <span>Most Popular Course</span>
+                    <img src="assets/icons/star with two dot.png"
+                        alt="star">
+                </div>
+
+                <h1 class="hero-title">Web Full Stack Development</h1>
+                <p class="hero-description">
+                    Transform into a complete full-stack developer with our comprehensive course covering frontend,
+                    backend, and database technologies. Build real-world projects and get job-ready skills that
+                    companies actually want.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <p class="rating">⭐ <strong>4.9</strong> (1,250 reviews)</p>
+                    </div>
+                    <div class="stat-item">
+                        <img src="assets/icons/people.png"
+                            alt="students">
+                        <p>15,000+ students</p>
+                    </div>
+                    <div class="stat-item">
+                        <img src="assets/icons/clock.png"
+                            alt="clock">
+                        <p>12 Weeks</p>
+                    </div>
+                </div>
+                <div class="free-containt">
+                
+                    <h2><i class="ri-gift-line" style="color:#41B574;padding-right: 10px;"></i> Free Content Available!</h2>
+                    <p>Start learning immediately with 8 free videos. No payment required!</p>
+                    <div>
+                        <h5><i class="ri-play-large-line" style="color: #41B574; font-size: 20px; padding-right: 10px;"></i>8 Free Videos</h5>
+                        <h5><i class="ri-lock-2-line" style="color: yellow;font-size: 20px;padding-right: 10px;"></i>112 Premium Videos</h5>
+
+                    </div>
+                </div>
+
+                <div class="pricing">
+                    <h2 class="current-price">₹9,999</h2>
+                    <h2 class="original-price">₹14,999</h2>
+                    <h2 class="discount">33% OFF</h2>
+                </div>
+
+                <div class="cta-buttons">
+                    <button id="btn-primary">
+                        Enroll Now <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button id="btn-secondary">
+                        <i class="ri-play-large-line"></i> Preview Course
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="video-container">
+                    <div class="video-frame">
+                        <img src="assets/images/video1.jpeg"
+                            alt="Course Preview" class="video-thumbnail">
+                        <div class="play-button">
+                            <i class="ri-play-large-line"></i>
+                        </div>
+                        <div class="popup-badge" id="duration-badge">
+                            <h3>12 weeks</h3>
+                            <p>Duration</p>
+                        </div>
+                        <div class="popup-badge" id="project-badge">
+                            <h3>8 Projects</h3>
+                            <p>Build & Deploy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div id="first-circle"></div>
+                <div id="secound-circle"></div>
+        </section>
+
+        <!-- features-section -->
+        <section class="features-section">
+           
+
+        </section>
+
+        <section class="mastery-section">
+            <h2>What You'll Master</h2>
+            <div class="mastery-grid">
+               
+            </div>
+        </section>
+
+        <section class="roadmap-section">
+            <div class="roadmap-header">
+                <h2>Complete <span class="gradient-text">Learning Roadmap</span></h2>
+                <p>Structured curriculum with free and premium content</p>
+            </div>
+
+            <div class="roadmap-content">
+                <div class="week-selector">
+                    <button class="week-btn" id="Week1">Week 1</button>
+                    <button class="week-btn" id="Week2">Week 2</button>
+                    <button class="week-btn" id="Week3">Week 3</button>
+                    <button class="week-btn" id="Week4">Week 4</button>
+                    <button class="week-btn" id="Week5">Week 5</button>
+                    <button class="week-btn" id="Week6">Week 6</button>
+                </div>
+
+                <div class="roadmap-title">
+                    <h3>Web Fundamentals</h3>
+                    <p>Master the building blocks of web development</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <div class="lesson-card">
+                        <!-- <div class="lesson-info">
+                            <span class="lesson-type video"><i class="ri-play-large-line"></i> video</span>
+                            <h4>HTML5 & Semantic Markup</h4>
+                            <p>Lesson 1</p>
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="duration">15 min <span class="free-badge"><i class="ri-gift-fill"></i>
+                                    free</span></span>
+                            <button class="watch-btn" id="free"><i class="ri-play-large-line"></i> Watch free</button>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-info">
+                            <span class="lesson-type video"><i class="ri-play-large-line"></i> video</span>
+                            <h4>CSS3 & Flexbox/Grid</h4>
+                            <p>Lesson 2</p>
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="duration">20 min <span class="free-badge"><i class="ri-gift-fill"></i>
+                                    free</span></span>
+                            <button class="watch-btn" id="free"><i class="ri-play-large-line"></i> Watch free</button>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-info">
+                            <span class="lesson-type video"><i class="ri-play-large-line"></i> video</span>
+                            <h4>JavaScript ES6+</h4>
+                            <p>Lesson 3</p>
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="duration">25 min <span class="free-badge"><i class="ri-gift-fill"></i>
+                                    free</span></span>
+                            <button class="watch-btn" id="free"><i class="ri-play-large-line"></i> Watch free</button>
+                        </div>
+                    </div>
+
+                    <div class="lesson-card">
+                        <div class="lesson-info">
+                            <span class="lesson-type project"><i class="ri-code-line"></i> project</span>
+                            <h4>DOM Manipulation</h4>
+                            <p>Lesson 4</p>
+                        </div>
+                        <div class="lesson-meta">
+                            <span class="duration">18 min <span class="premium-badge"><i class="ri-lock-2-line"></i>
+                                    Premium</span></span>
+                            <button class="watch-btn" id="premium"><i class="ri-vip-crown-line"></i> Unlock</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="instructor-section">
+            <div class="instructor-card">
+                <h3>Your Instructor</h3>
+                <div class="instructor-profile">
+                    <img src="assets/images/Rajesh Kumar.png"
+                        alt="Instructor" class="instructor-avatar">
+                    <div class="instructor-info">
+                        <h4>Rajesh Kumar</h4>
+                        <p class="instructor-experience">10+ years at Google & Microsoft</p>
+                    </div>
+                </div>
+                <p class="instructor-description">
+                    Senior full-stack developer with extensive experience building scalable applications. Passionate
+                    about teaching and helping students achieve their career goals through practical, hands-on learning
+                    experiences.
+                </p>
+            </div>
+
+            <div class="stats-card">
+                <h3>Course Stats</h3>
+                <div class="stats-grid">
+                    <div class="stat-row">
+                        <span class="stat-label"><i class="ri-briefcase-2-fill"></i> Duration</span>
+                        <span class="stat-value">16 weeks</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label"><i class="ri-stairs-line"></i> Level</span>
+                        <span class="stat-value">Beginner to Advanced</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label"><i class="ri-briefcase-2-fill"></i> Students</span>
+                        <span class="stat-value">25,000+</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label"><i class="ri-play-large-line"></i> Free Content</span>
+                        <span class="stat-value">8 Videos</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label"><i class="ri-trophy-line"></i> Certificate</span>
+                        <span class="stat-value">Yes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2>Ready to Start Your <span class="gradient-text">Journey?</span></h2>
+                <p>Start with free content and upgrade anytime for full access to premium videos and projects!</p>
+                <div class="cta-buttons">
+                    <button class="btn-free">
+                        <i class="ri-play-large-line"></i> Start Free Videos <i class="ri-arrow-right-line"></i>
+                    </button>
+                    <button class="btn-premium">
+                        <i class="ri-vip-crown-fill"></i> Unlock Full Course - ₹9,999
+                    </button>
+                </div>
+                <p class="guarantee">💯 30-day money-back guarantee • 🎯 Lifetime access • 🏆 Industry certification</p>
+            </div>
+        </section>
+    </main>
+    <script src="script/course.js"></script>
+</body>
+
+</html>
