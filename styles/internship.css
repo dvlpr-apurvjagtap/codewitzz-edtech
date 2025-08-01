@@ -12,6 +12,10 @@ body {
   padding: 60px 0px;
   padding-bottom: 0.1px;
 }
+body, .container, .why-choose, .projects {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .badge {
   display: inline-block;
@@ -26,13 +30,18 @@ body {
 }
 .badge img{
    vertical-align: middle;
-    width: auto;
-    height: 1rem;
+    max-width: 100%;
+    height: auto;
 }
 h1 {
-  font-size: 100px;
+  font-size: 50px;
   font-weight: 900;
   line-height: 1;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px
+  }
 }
 
 .highlight {
@@ -43,9 +52,10 @@ h1 {
 
 .description {
   color: #ccc;
+  padding: 0 1rem;
   max-width: 900px;
   margin: 20px auto;
-  font-size: 23px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -187,11 +197,11 @@ h1 {
 }
 
 .section-subtext {
-  max-width: 700px;
-  margin: 0 auto 2rem;
+  
+  margin: 0 1rem;
   color: #c0b9d1;
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 2.5rem;
+  
 }
 
 
@@ -203,11 +213,6 @@ h1 {
   
 }
 
-@media (max-width: 700px) {
-  .tracks-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .track-card {
   background: rgba(0, 0, 0, 0.20);
   border: none;
@@ -271,7 +276,8 @@ h1 {
 
 .cta-btn {
   border: none;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   padding: 0.75rem 1.5rem;
   border-radius: 15px;
   font-weight: 600;
@@ -352,7 +358,8 @@ h1 {
 
 .learning-journey {
   max-width: 1200px;
-  height: 800px;
+  min-height: 800px;
+  height: auto;
   margin: 6rem auto;
   padding: 2rem;
   text-align: center;
@@ -453,6 +460,12 @@ h1 {
 .phase-content p {
   color: #c0b9d1;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .phase-content{
+    padding: 1.5rem;
+  }
 }
 
 .topics {
@@ -837,6 +850,14 @@ transform: translateY(-5px) scale(1.06);
   width: 40.7rem;
 }
 
+@media (max-width: 768px) {
+  .transform-cards{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+
 .transform-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 0.75rem;
@@ -908,6 +929,13 @@ transform: translateY(-5px) scale(1.06);
   color: #c0b9d1;
   font-size: 0.90rem;
   width: 658px;
+}
+
+@media (max-width: 768px) {
+  .transform-note {
+    width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 .transform-note div {
