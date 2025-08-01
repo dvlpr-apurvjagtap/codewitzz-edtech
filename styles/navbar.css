@@ -1,0 +1,100 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    background: linear-gradient(to right, #111827, #581C87, #111827);
+    padding: 0 40px;
+    backdrop-filter: blur(70px);
+    background: rgba(136, 125, 136, 0.2);
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(228, 223, 223, 0.1);
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 100vw;
+}
+
+.nav {
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    text-decoration: none;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-family: Inter;
+}
+.nav a:hover {
+    background: linear-gradient(to right, #06B6D433, #EC489933);
+   text-decoration: none;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-family: Inter;
+}
+
+#nav {
+    gap: 25px;
+}
+
+
+.home-box {
+    display: flex;
+    background: linear-gradient(to right, #06B6D433, #EC489933);
+ 
+    border: 1px solid #22D3EE4D;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.coin-box {
+    display: flex;
+    background: linear-gradient(to right, #EAB30833, #F9731633);
+    height: 18px;
+    width: 100px;
+    border: 1px solid #FACC154D;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #FACC15;
+
+}
+
+#coin-box {
+    color: #FACC15;
+}
+
+.Sign-in-btn {
+    display: flex;
+    background: linear-gradient(to right, #06B6D4, #EC4899);
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+    width: 102px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}

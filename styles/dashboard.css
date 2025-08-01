@@ -1,0 +1,1114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+
+/*main css code*/
+
+html,
+body {
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(to top left, #111827, #581C87, #111827);
+}
+
+#container {
+    max-width: 100%;
+    max-height: 150%;
+    margin-top: 6rem;
+}
+
+#container h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #73d7fe, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#container p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 22px;
+    color: rgb(222, 220, 220);
+}
+
+
+/*rectangular div*/
+
+#dash-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.streak {
+    justify-items: center;
+    background: radial-gradient(circle at center, #612148, #4b2253);
+    border-radius: 1rem;
+    padding: 1rem 4.3rem;
+    border: 1.3px solid #804469;
+}
+
+.codez {
+    justify-items: center;
+    background: radial-gradient(circle at center, #5a3445, #452949);
+    border-radius: 1rem;
+    padding: 1rem 4.3rem;
+    border: 1.3px solid #7d5266;
+}
+
+.ach {
+    justify-items: center;
+    background: radial-gradient(circle at center, #353a6f, #3d2e80);
+    border-radius: 1rem;
+    padding: 1rem 4.3rem;
+    border: 1.3px solid #568fa0;
+}
+
+.hr-learn {
+    justify-items: center;
+    background: radial-gradient(circle at center, #284981, #332b8d);
+    border-radius: 1rem;
+    padding: 1rem 4.3rem;
+    border: 1.3px solid #4f6ea3;
+}
+
+.icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.streak .label {
+    color: #ff9f43;
+}
+
+.codez .label {
+    color: #fdd835;
+}
+
+.ach .label {
+    color: #00e676;
+}
+
+.hr-learn .label {
+    color: #64b5f6;
+}
+
+
+/*active 5 buttons*/
+
+.dash-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.3rem 0.9rem;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.btn .icon {
+    font-size: 20px;
+}
+
+.btn .text {
+    color: rgb(212, 210, 210);
+    font-size: 14px;
+}
+
+.btn.active1 {
+    background: linear-gradient(to right, rgb(73, 210, 241), rgb(103, 115, 250));
+    color: white;
+}
+
+.btn.active2 {
+    background: linear-gradient(to right, #a61dd7, #e638c6);
+    color: white;
+}
+
+.btn.active3 {
+    background: linear-gradient(to right, #3fbf3f, #22e798);
+    color: white;
+}
+
+.btn.active4 {
+    background: linear-gradient(to right, #dccf1a, #f76c0f);
+    color: white;
+}
+
+.btn.active5 {
+    background: linear-gradient(to right, #e853af, #f91a55);
+    color: black;
+}
+
+
+/*div 1*/
+
+.content-box {
+    background: linear-gradient(to right, #21183f, #581C87, #21183f);
+    margin: 3rem;
+    border-radius: 1.5rem;
+    height: 100%;
+}
+
+.content-box h2 {
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.actions-section {
+    flex: 1;
+    min-width: 350px;
+    margin-right: 2rem;
+}
+
+.progress-section {
+    flex: 1;
+    min-width: 350px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.progress-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.progress-box h3 {
+    padding-bottom: 1.5rem;
+}
+
+.progress-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.progress-item span {
+    width: 40px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 14px;
+    background: #2c2f38;
+    border-radius: 10px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to right, #00f0ff, #fc6cfc);
+}
+
+.progress-time {
+    width: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #00e6ff;
+}
+
+.actions-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 0.1rem;
+}
+
+.section-title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 18px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.continue {
+    background: #00c972;
+    align-self: center;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    ;
+}
+
+.quiz {
+    background: #1a9cff;
+    align-self: center;
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+.mentor {
+    background: linear-gradient(to right, #a070ff, #fc6cfc);
+    align-self: center;
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+}
+
+.courses-container {
+    background: linear-gradient(to right, #21183f, #581C87, #21183f);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*div 2*/
+
+.course-cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
+}
+
+.course-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+}
+
+.course-card .header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.course-card .header img {
+    width: 40px;
+    height: 40px;
+}
+
+.course-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.course-card .lessons {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.progress-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 0.8rem;
+    color: rgb(218, 217, 217);
+}
+
+.label-per {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-per {
+    font-size: 12px;
+    color: rgb(218, 217, 217);
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 10px;
+    background: #2c2f38;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.progress-percent {
+    position: absolute;
+    top: -22px;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.cr-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.next-topic {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    color: rgb(218, 217, 217);
+}
+
+.next-topic strong {
+    color: white;
+    font-weight: bold;
+}
+
+.continue-btn {
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card1 {
+    background: linear-gradient(to right, #3775c5, #174f9c);
+}
+
+.card1 .progress-fill {
+    width: 65%;
+    background: linear-gradient(to right, #0288d1, #00e0ff);
+}
+
+.card1 .continue-btn {
+    background: linear-gradient(to right, #1a9cff, #00d4ff);
+}
+
+.card2 {
+    background: linear-gradient(to right, #900cc1, #5602b6);
+}
+
+.card2 .progress-fill {
+    width: 80%;
+    background: linear-gradient(to right, #8c0afd, #de43fa);
+}
+
+.card2 .continue-btn {
+    background: linear-gradient(to right, #8c0afd, #de43fa);
+}
+
+
+/* div 3 */
+
+.header-div3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.streak-div3 {
+    background: #612148;
+    color: white;
+    padding: 10px 16px;
+    border: 1.3px solid #7d5266;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    margin-right: 2.8rem;
+    margin-top: 0.3rem;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 2.7rem;
+    margin-right: 2.7rem;
+    border: 1px solid rgb(97, 97, 97);
+}
+
+.empty-circle {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #b0b3d6;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.empty-circle:hover {
+    border-color: #22b5ff;
+    cursor: pointer;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+}
+
+.task:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.icon-div3 {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.task-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.btn-xp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    font-size: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+}
+
+.tag.easy {
+    background-color: #93cfad;
+    color: rgb(3, 86, 27);
+    padding: 0.3rem 0.6rem;
+    opacity: 0.7;
+}
+
+.tag.hard {
+    background-color: #853366;
+    color: #fc207c;
+    padding: 0.3rem 0.6rem;
+    opacity: 0.5;
+}
+
+.tag.med {
+    background-color: #e9de85;
+    color: rgb(249, 148, 8);
+    padding: 0.3rem 0.6rem;
+    opacity: 0.7;
+}
+
+.xp-ease {
+    margin-top: 4px;
+    color: #32d8ff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10rem;
+}
+
+.xp-hard {
+    margin-top: 4px;
+    color: #32d8ff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5.5rem;
+}
+
+.xp-med {
+    margin-top: 4px;
+    color: #32d8ff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 3.5rem;
+}
+
+.start-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-right: 0.7rem;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+}
+
+.goal-container {
+    background: linear-gradient(to right, #5d1d88, #39163b);
+    border-radius: 16px;
+    padding: 30px 50px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-right: 2.7rem;
+    margin-left: 2.7rem;
+}
+
+.goal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.goal-subtext {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    color: rgb(236, 235, 235);
+}
+
+.pro-bar {
+    height: 15px;
+    background-color: #333d45;
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-goal {
+    height: 100%;
+    width: 33.3%;
+    background: linear-gradient(to right, #32d4fc, #eb89d1);
+    border-radius: 999px;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: rgb(236, 235, 235);
+}
+
+
+/*div 4*/
+
+.achievement-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-title img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: linear-gradient(to right, #652863, #3a2138);
+    border: 2px solid #d69e2e;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.achievement-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.achievement-desc {
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.achievement-xp {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #6b46c1;
+    color: white;
+}
+
+.badge.common {
+    background-color: #9f7aea;
+}
+
+.badge.rare {
+    background-color: #4f46e5;
+}
+
+.badge.epic {
+    background-color: #d946ef;
+}
+
+.badge.locked {
+    background-color: #4b5563;
+}
+
+.status {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-weight: bold;
+    color: #00ffae;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.locked-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.6;
+}
+
+.progress-section4 {
+    margin-top: 10px;
+}
+
+.progress-bar4 {
+    height: 8px;
+    background-color: #2d3748;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress-fill4 {
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(to right, #3cf, #e38fbc);
+}
+
+.progress-text4 {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #ddd;
+}
+
+.container1 {
+    padding: 20px;
+    max-width: 1300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container2 {
+    padding: 20px;
+    max-width: 1300px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.ach-h2 {
+    font-size: 30px;
+    color: #ffd700;
+    margin-bottom: 30px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #612d4d;
+    border: 2px solid #867838;
+    border-radius: 16px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.5);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 32px;
+}
+
+.card h4 {
+    margin: 10px 0 5px;
+    color: white;
+    margin-top: 1.2rem;
+}
+
+.p {
+    color: #ccc;
+    align-items: left;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+
+.xp {
+    color: gold;
+    font-weight: bold;
+    align-items: left;
+    margin-top: 1rem;
+}
+
+.status {
+    color: #00ffae;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-right: 0.7rem;
+}
+
+.badge {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-right: 0.7rem;
+}
+
+.badge.common {
+    background-color: #664e77;
+}
+
+.badge.rare {
+    background-color: #5a6090;
+    opacity: 0.5;
+    color: #46beff;
+}
+
+.badge.epic {
+    background-color: #7b4f9a;
+    opacity: 0.5;
+    color: #d388ff;
+}
+
+.progress-bar4 {
+    background-color: #222;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress4 {
+    height: 100%;
+    background: linear-gradient(to right, #00c6ff, #ff6ec4);
+    width: 0%;
+    transition: width 0.3s;
+}
+
+.pro-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pro {
+    font-size: 0.9rem;
+    color: rgb(183, 182, 182);
+    padding-top: 0.8rem;
+}
+
+.duration {
+    font-size: 0.9rem;
+    color: rgb(183, 182, 182);
+    padding-top: 0.8rem;
+    margin-right: 0.7rem;
+}
+
+.card.last {
+    background-color: transparent
+}
+
+
+/*div 5*/
+
+.wal-code {
+    font-size: 1.5rem;
+    align-content: center;
+    padding-top: 2rem;
+    justify-self: center;
+    font: bold;
+}
+
+.wal-num {
+    font-size: 3.2rem;
+    padding-top: 0.6rem;
+    justify-self: center;
+    font: bolder;
+}
+
+.wal-num b {
+    color: rgb(254, 172, 6);
+}
+
+.wal-txt {
+    font-size: 1rem;
+    color: rgb(218, 218, 217);
+    padding: 0.6rem;
+    justify-self: center;
+}
+
+.wal-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.wal-card {
+    flex: 1;
+    border-radius: 16px;
+    padding: 24px;
+    background: rgba(80, 104, 161, 0.103);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.h2 h2 {
+    font-size: 1.5rem;
+    left: 0;
+    justify-self: start;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.earning-item,
+.redeem-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+}
+
+.points {
+    color: #00ff9d;
+    font-weight: bold;
+}
+
+.redeem-item p {
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 4px;
+    padding-left: 0;
+}
+
+.redeem-btn {
+    background: linear-gradient(to right, #00d4ff, #ff4ecd);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.redeem-btn:hover {
+    opacity: 0.8;
+}
+
+.coin {
+    padding-left: 0.2rem;
+    font-size: 0.9rem;
+    color: rgb(178, 178, 178);
+    padding-top: 1rem;
+}
+
+
+/*hide/show content for div */
+
+.content-box>div {
+    display: none;
+}
+
+.content-box>.show {
+    display: block;
+}
+
+
+/*  Zoom effect for all buttons */
+
+button,
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+
+/*animation for all div*/
+
+div:hover {
+    transition: transform 0.4s ease;
+    transform: perspective(600px) rotateX(3deg) rotateY(3deg);
+}
+
+div {
+    animation: fadeInUp 0.6s ease-in-out both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* for responsiveness */
+
+@media (max-width: 768px) {
+    .dash-button {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+    .course-cards {
+        flex-direction: column;
+    }
+    .card-row {
+        flex-direction: column;
+    }
+    .wal-container {
+        flex-direction: column;
+    }
+    .actions-section button {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+}

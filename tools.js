@@ -18,4 +18,4 @@ function showContent(id, clickedBtn) {
     // ADD ACTIVE CLASS TO THE CLICKED BUTTON
     clickedBtn.classList.add('active-tab');
   }
-  
+

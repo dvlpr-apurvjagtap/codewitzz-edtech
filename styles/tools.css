@@ -890,8 +890,14 @@ option {
     font-weight: 400;
   }
 
-.common:hover,.rare:hover,.epic:hover,
-.quiz:hover,.project:hover,.mentor:hover {
+.common:hover,
+.rare:hover,
+.epic:hover,
+.quiz:hover,
+.project:hover,
+.epic1:hover,
+.mentor:hover {
+
   transform: scale(1.05); 
   z-index: 10;
 }
