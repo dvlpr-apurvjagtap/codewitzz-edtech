@@ -277,3 +277,9 @@ codez.forEach(function (coins) {
 });
 
 codez_coin.innerHTML = coin;
+
+// Locomotive js
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#All-body'),
+    smooth: true
+});
